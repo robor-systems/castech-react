@@ -9,7 +9,7 @@ const Navbar = () => {
     setHamMenu(!hamMenu);
   };
   return (
-    <div className="flex justify-between items-center shadow-[0px_3px_10px_#00000014] fixed w-full">
+    <div className="flex justify-between items-center shadow-[0px_3px_10px_#00000014]  w-full">
       <img
         src={castechLogo}
         alt="logo"
