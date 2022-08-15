@@ -11,6 +11,7 @@ module.exports = {
         },
         text: {
           primary: "#606F7B",
+          secondary: "#EE2737",
         },
       },
       fontFamily: {
