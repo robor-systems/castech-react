@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Button from "./Button";
+import Button from "../components/Button";
 const castechLogo =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/logo/CASTechnology+Inc.png";
 const Navbar = () => {
