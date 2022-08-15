@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutBand = () => {
+const AboutStats = () => {
   return (
     <div className="w-[312px] h-[260px] md:w-[580px]  lg:w-[1126px] lg:h-[120px] rounded-[8px] bg-[#EE2737] mt-[100px] flex flex-row justify-around md:px-[50px] lg:px-[100px]">
       <div className="flex flex-col lg:flex-row lg:w-[500px] justify-around">
@@ -27,4 +27,4 @@ const AboutBand = () => {
   );
 };
 
-export default AboutBand;
+export default AboutStats;

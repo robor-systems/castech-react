@@ -1,6 +1,5 @@
 import React from "react";
 import AboutStats from "../AboutStats";
-
 const group_image =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home-image-2.jpg";
 const dot_Square =
@@ -39,7 +38,7 @@ const AboutUs = () => {
         <div className="relative">
           <img
             src={group_image}
-            alt="group image"
+            alt="groupimage"
             className="w-[312px] md:w-[496px] h-[239px] md:h-[380px]  md:ml-[30px] rounded-[35px] md:rounded-[80px] relative z-10 mt-[30px] md:mt-[0px]"
           />
           <div className="absolute right-[5%] md:right-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
