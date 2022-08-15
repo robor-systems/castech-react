@@ -13,7 +13,7 @@ const amplitude =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/amplitude-seeklogo.com.png";
 
 const Companies = () => {
-  const isSm = useMediaQuery({ query: "(max-width: 768px)" });
+  const isSm = useMediaQuery({ query: "(max-width: 1024px)" });
   return (
     <div className="flex flex-col text-center mt-[150px]">
       <p className="text-text-primary mb-[20px]">
