@@ -1,13 +1,15 @@
 import React from "react";
 import Companies from "./Companies";
 import Hero from "./Hero";
-import WhatWeDoSection from "./WhatWeDoSection";
+import Services from "./Services";
+import AboutUs from "./AboutUs";
 const Home = () => {
   return (
     <div>
       <Hero />
       <Companies />
-      <WhatWeDoSection />
+      <Services />
+      <AboutUs />
     </div>
   );
 };

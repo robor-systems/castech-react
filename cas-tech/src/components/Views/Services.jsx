@@ -1,17 +1,17 @@
 import React from "react";
 import TechBox from "../TechBox";
 
-const WhatWeDoSection = () => {
+const Services = () => {
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-text-secondary text-[14px] text-center mt-[120px]">
         WHAT WE DO
       </h2>
       <h1 className="text-center text-[32px]">Lorem ipsum dolor sit amet</h1>
-      <p className="text-center text-[16px] text-text-primary mb-[48px]">
+      <p className="text-center text-[16px] text-text-primary mb-[48px] px-[20px]">
         Our technology allows you to provide lorem ipsum dolor sit amet.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 grid-rows-3 px-[20px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6  px-[20px]">
         <TechBox
           heading={"Cloud Computing"}
           para={
@@ -65,4 +65,4 @@ const WhatWeDoSection = () => {
   );
 };
 
-export default WhatWeDoSection;
+export default Services;
