@@ -1,11 +1,13 @@
 import React from "react";
+import AboutStats from "../AboutStats";
+
 const group_image =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home-image-2.jpg";
 const dot_Square =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/dots-square.svg";
 const AboutUs = () => {
   return (
-    <div className="px-[40px] md:px-[200px]">
+    <div className="px-[40px] md:px-[100px] lg:px-[200px]">
       <div className="flex flex-col md:flex-row mt-[120px]">
         <div>
           <div className="text-text-secondary text-[14px]   ">WHO ARE WE</div>
@@ -40,11 +42,12 @@ const AboutUs = () => {
             alt="group image"
             className="w-[312px] md:w-[496px] h-[239px] md:h-[380px]  md:ml-[30px] rounded-[35px] md:rounded-[80px] relative z-10 mt-[30px] md:mt-[0px]"
           />
-          <div className="absolute right-[-15%]  bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
+          <div className="absolute right-[5%] md:right-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
             <img src={dot_Square} alt="dots" className="h-[52px] md:h-[auto]" />
           </div>
         </div>
       </div>
+      <AboutStats />
     </div>
   );
 };
