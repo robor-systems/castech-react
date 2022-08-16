@@ -6,7 +6,7 @@ const dot_Square =
 const Career = () => {
   return (
     <section id="career">
-      <div className="pt-[300px] flex flex-col md:flex-row gap-[5rem] justify-between px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
+      <div className="pt-[100px] flex flex-col md:flex-row gap-[5rem] justify-between px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
         <div className="relative">
           <img
             src={photo}
