@@ -16,10 +16,8 @@ const Companies = () => {
   const isSm = useMediaQuery({ query: "(max-width: 1024px)" });
   return (
     <div className="flex flex-col text-center mt-[150px]">
-      <p className="text-text-primary mb-[20px]">
-        Trusted by top-tier companies
-      </p>
-      <div className="flex justify-between px-[10px] md:px-[50px] lg:px-[100px] ">
+      <p className="text-text-primary ">Trusted by top-tier companies</p>
+      <div className="flex justify-between px-[10px] md:px-[50px] lg:px-[100px] xl:px-[110px]">
         <Marquee play={isSm ? true : false} gradient={false}>
           <div className="mx-[38px] my-[38px]">
             <img src={siemens_healthineers} alt="siemens" />

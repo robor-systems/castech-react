@@ -17,7 +17,7 @@ const Hero = () => {
           sagittis urna sodales tincidunt.
         </p>
         <div className="mt-[26px] mb-[60px]">
-          <button class="bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[269px] text-[20px]">
+          <button className="bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[269px] text-[20px]">
             Book Free Consultation
           </button>
         </div>

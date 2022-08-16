@@ -6,11 +6,11 @@ const dot_Square =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/dots-square.svg";
 const AboutUs = () => {
   return (
-    <>
-      <div className="px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
-        <div className="flex flex-col md:flex-row mt-[120px] px-[10px]">
+    <section id="about">
+      <div className="px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
+        <div className="flex flex-col md:flex-row  px-[10px] pt-[100px]">
           <div>
-            <div className="text-text-secondary text-[14px]   ">WHO ARE WE</div>
+            <div className="text-text-secondary text-[14px] ">WHO ARE WE</div>
             <h1 className="text-[32px] leading-[2.5rem] mb-[12px] font-semibold">
               We are technology-oriented <br /> solution provider & consultants
             </h1>
@@ -55,7 +55,7 @@ const AboutUs = () => {
       <div className="flex justify-center">
         <AboutStats />
       </div>
-    </>
+    </section>
   );
 };
 
