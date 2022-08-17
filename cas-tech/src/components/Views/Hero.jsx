@@ -1,10 +1,11 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Hero_image =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/hero-image.jpg";
 const dot_Square =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/dots-square.svg";
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col sm:flex-row">
       <div className="text-center sm:text-left mt-[91px]  mx-[15px] lg:mt-[85px] xl:mt-[182px] 2xl:mr-[230px] xl:mr-[150px] lg:mr-[100px] md:mx-[30px] xl:ml-[175px] lg:ml-[85px]">
@@ -17,7 +18,10 @@ const Hero = () => {
           sagittis urna sodales tincidunt.
         </p>
         <div className="mt-[26px] mb-[60px]">
-          <button className="bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[269px] text-[20px]">
+          <button
+            onClick={() => navigate("/contact")}
+            className="bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[269px] text-[20px]"
+          >
             Book Free Consultation
           </button>
         </div>

@@ -6,7 +6,7 @@ const dot_Square =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/dots-square.svg";
 const AboutUs = () => {
   return (
-    <section id="about">
+    <section name="about">
       <div className="px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
         <div className="flex flex-col md:flex-row  px-[10px] pt-[100px]">
           <div>

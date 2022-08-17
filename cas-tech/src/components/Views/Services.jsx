@@ -3,7 +3,7 @@ import TechBox from "../TechBox";
 
 const Services = () => {
   return (
-    <section id="service">
+    <section name="service">
       <div className="flex flex-col items-center">
         <h2 className="text-text-secondary text-[14px] text-center pt-[100px]">
           WHAT WE DO
