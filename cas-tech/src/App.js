@@ -5,7 +5,7 @@ import Navbar from "./Layout/Navbar";
 import Footer from "./Layout/Footer";
 const App = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Navbar />
       <div>
         <Routes>
