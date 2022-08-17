@@ -4,9 +4,11 @@ import Contact from "./components/Views/Contact";
 import Navbar from "./Layout/Navbar";
 import Footer from "./Layout/Footer";
 import PrivacyPolicy from "./components/Views/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <div className="flex flex-col">
+      <ScrollToTop />
       <Navbar />
       <div>
         <Routes>
