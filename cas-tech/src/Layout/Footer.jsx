@@ -29,14 +29,49 @@ const Footer = () => {
             Billing) and Data Warehousing.
           </p>
           <div className="hidden md:flex mt-[30px]">
-            <img src={facebook} alt="facebook" />
-            <img src={twitter} alt="twitter" className="ml-[30px]" />
-            <img src={linkedin} alt="linkedin" className="ml-[30px]" />
-            <img src={instagram} alt="instagram" className="ml-[30px]" />
+            <Link
+              to="#"
+              onClick={(e) => {
+                window.location.href = "https://www.facebook.com/";
+                e.preventDefault();
+              }}
+            >
+              <img src={facebook} alt="facebook" />
+            </Link>
+            <Link
+              to="#"
+              onClick={(e) => {
+                window.location.href = "https://twitter.com/i/flow/login";
+                e.preventDefault();
+              }}
+            >
+              <img src={twitter} alt="twitter" className="ml-[30px]" />
+            </Link>
+            <Link
+              to="#"
+              onClick={(e) => {
+                window.location.href = "https://www.linkedin.com/feed/";
+                e.preventDefault();
+              }}
+            >
+              <img src={linkedin} alt="linkedin" className="ml-[30px]" />
+            </Link>
+            <Link
+              to="#"
+              onClick={(e) => {
+                window.location.href = "https://www.instagram.com/";
+                e.preventDefault();
+              }}
+            >
+              <img src={instagram} alt="instagram" className="ml-[30px]" />
+            </Link>
           </div>
         </div>
         <div>
-          <div className="flex flex-col md:flex-row items-center  md:items-start">
+          <Link
+            to="#"
+            className="flex flex-col md:flex-row items-center  md:items-start"
+          >
             {" "}
             <img
               src={location}
@@ -49,8 +84,15 @@ const Footer = () => {
               <br />
               Canada
             </p>
-          </div>
-          <div className="flex flex-col md:flex-row   items-center mt-[24px]">
+          </Link>
+          <Link
+            to="#"
+            onClick={(e) => {
+              window.location.href = "mailto:info@castechnology.ca";
+              e.preventDefault();
+            }}
+            className="flex flex-col md:flex-row   items-center mt-[24px]"
+          >
             {" "}
             <img
               src={email}
@@ -58,7 +100,7 @@ const Footer = () => {
               className="mb-[10px] md:mb-[0px] md:mr-[19px] "
             />
             <p className="text-[14px]">info@castechnology.ca</p>
-          </div>
+          </Link>
           <div className="flex flex-col  md:flex-row  items-center mt-[24px] ">
             {" "}
             <img

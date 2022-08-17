@@ -28,7 +28,7 @@ const Navbar = () => {
         <ul className=" hidden md:flex md:items-center ">
           <li className="px-4 text-text-primary">
             <Link
-              className="px-4 text-text-primary"
+              className="px-4 text-text-primary cursor-pointer"
               to="service"
               smooth={true}
               duration={500}
@@ -36,13 +36,13 @@ const Navbar = () => {
               Services
             </Link>
           </li>
-          <li className="px-4  text-text-primary">
+          <li className="px-4  text-text-primary cursor-pointer">
             <Link to="about" smooth={true} offset={5} duration={500}>
               {" "}
               About Us
             </Link>
           </li>
-          <li className="px-4  text-text-primary">
+          <li className="px-4  text-text-primary cursor-pointer">
             <Link to="career" smooth={true} offset={5} duration={500}>
               {" "}
               Career
@@ -63,7 +63,7 @@ const Navbar = () => {
           <ul className="grid items-center md:hidden absolute bg-[#fff] top-[80px] w-full">
             <li className="flex justify-center  py-[24px] border-t  border-b border-[#EEF2F6]  text-text-primary">
               <Link
-                className="px-4 text-text-primary"
+                className="px-4 text-text-primary cursor-pointer"
                 to="service"
                 smooth={true}
                 duration={500}
@@ -72,13 +72,13 @@ const Navbar = () => {
                 Services
               </Link>
             </li>
-            <li className="flex justify-center py-[24px]  border-b border-[#EEF2F6]  text-text-primary">
+            <li className="flex justify-center py-[24px]  border-b border-[#EEF2F6]  text-text-primary cursor-pointer">
               <Link to="about" smooth={true} offset={-300} duration={500}>
                 {" "}
                 About Us
               </Link>
             </li>
-            <li className="flex justify-center py-[24px]  border-b border-[#EEF2F6]  text-text-primary">
+            <li className="flex justify-center py-[24px]  border-b border-[#EEF2F6]  text-text-primary cursor-pointer">
               <Link to="career" smooth={true} offset={-300} duration={500}>
                 {" "}
                 Career
