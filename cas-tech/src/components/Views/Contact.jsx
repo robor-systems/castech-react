@@ -66,7 +66,7 @@ const Contact = () => {
                 <div className="flex mt-[16px] ">
                   {success && (
                     <>
-                      <img src={successIcon} />
+                      <img src={successIcon} alt="success-icon" />
                       <p className="ml-[8px] ">
                         Message Sent! Thank you, we will get back to you.
                       </p>

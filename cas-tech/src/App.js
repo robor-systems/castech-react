@@ -3,6 +3,7 @@ import Home from "./components/Views/Home";
 import Contact from "./components/Views/Contact";
 import Navbar from "./Layout/Navbar";
 import Footer from "./Layout/Footer";
+import PrivacyPolicy from "./components/Views/PrivacyPolicy";
 const App = () => {
   return (
     <div className="flex flex-col">
@@ -11,6 +12,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
         </Routes>
       </div>
       <Footer />

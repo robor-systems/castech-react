@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const twitter =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/Footer-icons/twitter.svg";
 const linkedin =
@@ -78,7 +79,7 @@ const Footer = () => {
 
       <hr className="bg-#606F7B mt-[47px]  mx-[70px]" />
       <div className="mt-[32px] flex flex-col md:flex-row justify-between px-[25px] md:px-[60px] lg:px-[120px] text-center md:text-left">
-        <div>Privacy Policy</div>
+        <Link to="/privacy-policy">Privacy Policy</Link>
         <div>Copyright © CASTechnology Inc. 2022</div>
       </div>
     </div>
