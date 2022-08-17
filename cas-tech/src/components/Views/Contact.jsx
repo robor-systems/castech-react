@@ -16,18 +16,22 @@ const Contact = () => {
 
   const [success, setSuccess] = useState();
   return (
-    <div className="pt-[170px]  bg-[#EEF2F6] flex flex-col items-center ">
-      <p className="text-[14px] text-text-secondary font-semibold">
-        {" "}
-        HOW CAN WE HELP?
-      </p>
-      <h1 className="text-[32px] font-semibold">Book Free Consultation</h1>
-      <p className="text-[14px] text-text-primary pb-[48px] text-center">
-        Whether you have questions about features, demos or trials, we are here
-        <br />
-        to help you meet your business needs.
-      </p>
-      <div className="px-[40px]  w-[547px] h-[681px] bg-[#FFFFFF] rounded-[8px] border-[#EEF2F6] mb-[99px]">
+    <div className="pt-[170px]  bg-[#EEF2F6] flex flex-col px-[20px] md:items-center ">
+      <div className="text-center px-[15px]">
+        <p className="text-[14px] text-text-secondary font-semibold">
+          {" "}
+          HOW CAN WE HELP?
+        </p>
+        <h1 className="text-[32px] font-semibold">Book Free Consultation</h1>
+        <p className="text-[14px] text-text-primary pb-[48px] ">
+          Whether you have questions about features, demos or trials, we are
+          here
+          <br />
+          to help you meet your business needs.
+        </p>
+      </div>
+
+      <div className="px-[40px]  pb-[30px]  md:w-[547px]  bg-[#FFFFFF] rounded-[8px] border-[#EEF2F6] mb-[99px]">
         <Formik
           initialValues={{
             name: "",

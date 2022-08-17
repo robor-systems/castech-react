@@ -14,6 +14,7 @@ const Navbar = () => {
   };
   const onContactPage = () => {
     navigate("/contact");
+    setHamMenu(false);
   };
   return (
     <div className="relative w-full">
@@ -84,7 +85,9 @@ const Navbar = () => {
               </Link>
             </li>
             <div className="flex justify-center py-[24px] ">
-              <Button size="md"> Contact Us</Button>
+              <Button size="md" onContactPage={onContactPage}>
+                Contact Us
+              </Button>
             </div>
           </ul>
         )}
