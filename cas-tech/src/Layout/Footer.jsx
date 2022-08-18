@@ -29,47 +29,41 @@ const Footer = () => {
             Billing) and Data Warehousing.
           </p>
           <div className="hidden md:flex mt-[30px]">
-            <Link
-              to="#"
-              onClick={(e) => {
-                window.location.href = "https://www.facebook.com/";
-                e.preventDefault();
-              }}
+            <a
+              target="_blank"
+              href="https://www.facebook.com/"
+              rel="noreferrer"
             >
               <img src={facebook} alt="facebook" />
-            </Link>
-            <Link
-              to="#"
-              onClick={(e) => {
-                window.location.href = "https://twitter.com/i/flow/login";
-                e.preventDefault();
-              }}
+            </a>
+            <a
+              target="_blank"
+              href="https://twitter.com/i/flow/login"
+              rel="noreferrer"
             >
               <img src={twitter} alt="twitter" className="ml-[30px]" />
-            </Link>
-            <Link
-              to="#"
-              onClick={(e) => {
-                window.location.href = "https://www.linkedin.com/feed/";
-                e.preventDefault();
-              }}
+            </a>
+            <a
+              rel="noreferrer"
+              href="https://www.linkedin.com/feed/"
+              target="_blank"
             >
               <img src={linkedin} alt="linkedin" className="ml-[30px]" />
-            </Link>
-            <Link
-              to="#"
-              onClick={(e) => {
-                window.location.href = "https://www.instagram.com/";
-                e.preventDefault();
-              }}
+            </a>
+            <a
+              rel="noreferrer"
+              href="https://www.instagram.com/"
+              target="_blank"
             >
               <img src={instagram} alt="instagram" className="ml-[30px]" />
-            </Link>
+            </a>
           </div>
         </div>
         <div>
-          <Link
-            to="#"
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://goo.gl/maps/rTC46Vw6Bjybasof6"
             className="flex flex-col md:flex-row items-center  md:items-start"
           >
             {" "}
@@ -78,19 +72,20 @@ const Footer = () => {
               alt="location"
               className="w-[13px] h-[19px] mb-[10px] md:mb-[0px] md:mr-[19px] mt-[56px] md:mt-[5px]"
             />
-            <p className="text-[14px]">
+            <p className="text-[14px] hover:underline">
               3403 Middleton Place,
               <br /> Regina, SK, S4N 7C2,
               <br />
               Canada
             </p>
-          </Link>
+          </a>
           <Link
             to="#"
             onClick={(e) => {
               window.location.href = "mailto:info@castechnology.ca";
               e.preventDefault();
             }}
+            target="_blank"
             className="flex flex-col md:flex-row   items-center mt-[24px]"
           >
             {" "}
@@ -99,7 +94,7 @@ const Footer = () => {
               alt="email"
               className="mb-[10px] md:mb-[0px] md:mr-[19px] "
             />
-            <p className="text-[14px]">info@castechnology.ca</p>
+            <p className="text-[14px] hover:underline">info@castechnology.ca</p>
           </Link>
           <div className="flex flex-col  md:flex-row  items-center mt-[24px] ">
             {" "}
@@ -121,7 +116,9 @@ const Footer = () => {
 
       <hr className="bg-#606F7B mt-[47px]  mx-[70px]" />
       <div className="mt-[32px] flex flex-col md:flex-row justify-between px-[25px] md:px-[60px] lg:px-[120px] text-center md:text-left">
-        <Link to="/privacy-policy">Privacy Policy</Link>
+        <Link to="/privacy-policy" className="hover:underline">
+          Privacy Policy
+        </Link>
         <div>Copyright © CASTechnology Inc. 2022</div>
       </div>
     </div>
