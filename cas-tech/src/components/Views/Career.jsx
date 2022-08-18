@@ -6,14 +6,14 @@ const dot_Square =
 const Career = () => {
   return (
     <section id="career">
-      <div className="pt-[100px] flex flex-col md:flex-row gap-[5rem] justify-between px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
+      <div className="pt-[100px] flex flex-col md:flex-row gap-[5rem] justify-between px-[22px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
         <div className="relative">
           <img
             src={photo}
             alt="groupimage"
-            className="w-[312px] md:w-[496px] h-[239px] md:h-[380px]   rounded-[35px] md:rounded-[80px] relative z-10 "
+            className="w-[332px] md:w-[496px] h-[239px] md:h-[380px]   rounded-[35px] md:rounded-[80px] relative z-10 "
           />
-          <div className="absolute left-[5%] md:left-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
+          <div className="absolute left-[-3%] md:left-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
             <img src={dot_Square} alt="dots" className="h-[52px] md:h-[auto]" />
           </div>
         </div>

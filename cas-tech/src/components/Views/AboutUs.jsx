@@ -7,7 +7,7 @@ const dot_Square =
 const AboutUs = () => {
   return (
     <section name="about">
-      <div className="px-[40px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
+      <div className="px-[22px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
         <div className="flex flex-col md:flex-row  px-[10px] pt-[100px]">
           <div>
             <div className="text-text-secondary text-[14px] ">WHO ARE WE</div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
               alt="groupimage"
               className="w-[312px] md:w-[496px] h-[239px] md:h-[380px]  md:ml-[30px] rounded-[35px] md:rounded-[80px] relative z-10 mt-[30px] md:mt-[0px]"
             />
-            <div className="absolute right-[6%] md:right-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
+            <div className="absolute right-[-6%] md:right-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
               <img
                 src={dot_Square}
                 alt="dots"
