@@ -27,7 +27,7 @@ const Navbar = () => {
           />
         </Link_dom>
         <ul className=" hidden md:flex md:items-center ">
-          <li className="px-4 text-text-primary">
+          <li className=" text-text-primary">
             <Link
               className="px-4 text-text-primary cursor-pointer hover:text-text-dark"
               to="service"

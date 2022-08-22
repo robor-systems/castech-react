@@ -17,27 +17,23 @@ const Companies = () => {
   return (
     <div className="flex flex-col text-center mt-[150px]">
       <p className="text-text-primary ">Trusted by top-tier companies</p>
-      <div className="flex justify-between px-[10px] md:px-[50px] lg:px-[100px] xl:px-[110px]">
-        <Marquee play={isSm ? true : false} gradient={false}>
-          <div className="mx-[38px] my-[38px]">
-            <img src={siemens_healthineers} alt="siemens" />
-          </div>
-          <div className="mx-[38px] my-[38px]">
-            <img src={spotify} alt="logo" />
-          </div>
-          <div className="mx-[38px] my-[28px]">
-            <img src={premium_league} alt="premium" />
-          </div>
-          <div className="mx-[38px] my-[38px]">
-            <img src={vortex} alt="vortex" />
-          </div>
-          <div className="mx-[38px] my-[38px]">
-            <img src={amplitude} alt="amplitude" />
-          </div>
-          <div className="mx-[38px] my-[38px]">
-            <img src={premium_league} alt="premium" />
-          </div>
-        </Marquee>
+      <div className="flex justify-center px-[10px] md:px-[50px] lg:px-[100px] xl:px-[110px]">
+        {" "}
+        <div className="mx-[38px] my-[38px]">
+          <img src={siemens_healthineers} alt="siemens" />
+        </div>
+        <div className="mx-[38px] my-[38px]">
+          <img src={spotify} alt="logo" />
+        </div>
+        <div className="mx-[38px] my-[28px]">
+          <img src={premium_league} alt="premium" />
+        </div>
+        <div className="mx-[38px] my-[38px]">
+          <img src={vortex} alt="vortex" />
+        </div>
+        <div className="mx-[38px] my-[38px]">
+          <img src={amplitude} alt="amplitude" />
+        </div>
       </div>
     </div>
   );

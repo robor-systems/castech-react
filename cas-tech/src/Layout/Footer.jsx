@@ -41,7 +41,7 @@ const Footer = () => {
               href="https://twitter.com/i/flow/login"
               rel="noreferrer"
             >
-              <img src={twitter} alt="twitter" className="ml-[30px]" />
+              <img src={twitter} alt="twitter" className="ml-[30px] mt-[2px]" />
             </a>
             <a
               rel="noreferrer"
@@ -64,15 +64,15 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
             href="https://goo.gl/maps/rTC46Vw6Bjybasof6"
-            className="flex flex-col md:flex-row items-center  md:items-start"
+            className="flex flex-col gap-2 md:flex-row items-center  md:items-start"
           >
             {" "}
             <img
               src={location}
               alt="location"
-              className="w-[13px] h-[19px] mb-[10px] md:mb-[0px] md:mr-[19px] mt-[56px] md:mt-[5px]"
+              className="w-[13px] h-[19px] mb-[10px] md:mb-[0px]  mt-[56px] md:mt-[5px]"
             />
-            <p className="text-[14px] hover:underline">
+            <p className="text-[14px] hover:underline ml-[6px]">
               3403 Middleton Place,
               <br /> Regina, SK, S4N 7C2,
               <br />
@@ -86,29 +86,21 @@ const Footer = () => {
               e.preventDefault();
             }}
             target="_blank"
-            className="flex flex-col md:flex-row   items-center mt-[24px]"
+            className="flex flex-col gap-2 md:flex-row   items-center mt-[24px]"
           >
             {" "}
-            <img
-              src={email}
-              alt="email"
-              className="mb-[10px] md:mb-[0px] md:mr-[19px] "
-            />
+            <img src={email} alt="email" className="mb-[10px] md:mb-[0px]  " />
             <p className="text-[14px] hover:underline">info@castechnology.ca</p>
           </Link>
-          <div className="flex flex-col  md:flex-row  items-center mt-[24px] ">
+          <div className="flex flex-col gap-2 md:flex-row  items-center mt-[24px] ">
             {" "}
-            <img
-              src={phone}
-              alt="phone"
-              className="mb-[10px] md:mb-[0px]  md:mr-[19px] "
-            />
+            <img src={phone} alt="phone" className="mb-[10px] md:mb-[0px]  " />
             <p className="text-[14px]">+13065914999</p>
           </div>
         </div>
         <div className="flex justify-center md:hidden mt-[30px]">
           <img src={facebook} alt="facebook" />
-          <img src={twitter} alt="twitter" className="ml-[30px]" />
+          <img src={twitter} alt="twitter" className="ml-[30px] " />
           <img src={linkedin} alt="linkedin" className="ml-[30px]" />
           <img src={instagram} alt="instagram" className="ml-[30px]" />
         </div>
