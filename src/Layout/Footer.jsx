@@ -16,7 +16,7 @@ const phone =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/Footer-icons/local-phone.svg";
 const Footer = () => {
   return (
-    <div className="h-368px w-full  gap-1 py-[56px]  bg-[#1D1D1D] text-text-tertiary">
+    <div className="h-368px w-full  gap-1 py-[56px]  bg-[#1D1D1D] text-text-tertiary sticky top-[100%]">
       <div className="flex flex-col md:flex-row justify-between px-[35px] md:px-[60px] lg:px-[120px] text-center md:text-left">
         <div>
           <h1 className="text-[20px] font-bold mb-[10px] text-[#DDEAF5]">

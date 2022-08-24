@@ -7,7 +7,7 @@ import PrivacyPolicy from "./components/Views/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-[100vh]">
       <ScrollToTop />
       <Navbar />
       <div>
