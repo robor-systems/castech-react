@@ -61,7 +61,7 @@ const Navbar = () => {
           {hamMenu ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={30} />}
         </div>
         {hamMenu && (
-          <ul className="grid items-center md:hidden absolute bg-[#fff] top-[80px] w-full">
+          <ul className="grid items-center md:hidden absolute bg-[#fff] top-[80px] w-full shadow-[0px_3px_10px_#00000014] ">
             <li className="flex justify-center  py-[24px] border-t  border-b border-[#EEF2F6]  text-text-primary">
               <Link
                 className="px-4 text-text-primary cursor-pointer hover:text-text-dark"

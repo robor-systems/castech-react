@@ -30,7 +30,7 @@ const Hero = () => {
         <img
           alt="hero_image"
           src={Hero_image}
-          className=" lg:w-[38.5rem]  lg:h-[483px] sm:rounded-bl-[80px] lg:mt-[25px]"
+          className="w-[375px] h-[282px] lg:w-[38.5rem]  lg:h-[483px] sm:rounded-bl-[80px] lg:mt-[25px]"
         />
         <div className="absolute right-0 w-[110px] sm:w-[194px]  bottom-[-16%] md:bottom-[2%]">
           <img src={dot_Square} alt="dots" />
