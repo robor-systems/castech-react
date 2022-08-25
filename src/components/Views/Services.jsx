@@ -5,14 +5,17 @@ const Services = () => {
   return (
     <section name="service">
       <div className="flex flex-col items-center">
-        <h2 className="text-text-secondary text-[14px] text-center pt-[100px]">
+        <h2 className="text-text-secondary text-[14px] text-center pt-[100px] font-semibold">
           WHAT WE DO
         </h2>
-        <h1 className="text-center text-[32px]">Lorem ipsum dolor sit amet</h1>
-        <p className="text-center text-[16px] text-text-primary mb-[48px] px-[20px]">
+        <h1 className="text-center text-[24px] sm-[32px] font-semibold px-[30px]">
+          Lorem ipsum dolor sit amet
+        </h1>
+        <p className="text-center text-[16px] text-text-primary mb-[48px] px-[25px] mt-[8px]">
           Our technology allows you to provide lorem ipsum dolor sit amet.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6  px-[20px]">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6  px-[10px]">
           <TechBox
             heading={"Cloud Computing"}
             para={

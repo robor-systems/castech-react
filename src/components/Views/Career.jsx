@@ -7,7 +7,7 @@ const Career = () => {
   return (
     <section id="career">
       <div className="pt-[100px] flex flex-col md:flex-row gap-[1rem] md:gap-[5rem] justify-between mx-[10px] md:mx-0  px-[22px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
-        <div className="relative">
+        <div className="relative ">
           <img
             src={photo}
             alt="groupimage"
@@ -21,9 +21,11 @@ const Career = () => {
           <div className="text-text-secondary text-[14px]  mt-[50px] md:mt-[0px] ">
             WHY JOIN US
           </div>
-          <h1 className="text-[32px] leading-[2.5rem] mb-[12px] font-semibold">
-            We value or people and their <br /> cultures lorem ipsum.
-          </h1>
+          <div>
+            <h1 className="text-[24px] md:text-[32px] leading-[2rem] md:leading-[2.5rem] mb-[12px] font-semibold w-[18rem] md:w-[36rem]">
+              We value or people and their cultures lorem ipsum.
+            </h1>
+          </div>
           <p className="text-text-primary text-[14px] leading-[1.5rem]">
             We in CASTechnology Inc. believe those employees are asset of
             organization. We <br /> care them and do whatever is possible to

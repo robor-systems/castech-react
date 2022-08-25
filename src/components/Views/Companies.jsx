@@ -24,14 +24,16 @@ const Companies = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
   };
   return (
     <div className="flex flex-col text-center mt-[150px]">
-      <p className="text-text-primary ">Trusted by top-tier companies</p>
+      <p className="text-text-primary font-semibold">
+        Trusted by top-tier companies
+      </p>
       {isSm ? (
         <Slider {...settings}>
           <div className="!flex justify-center mt-[32px]  ">

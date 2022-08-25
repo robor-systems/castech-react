@@ -7,11 +7,13 @@ const dot_Square =
 const AboutUs = () => {
   return (
     <section name="about">
-      <div className="px-[22px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
-        <div className="flex flex-col md:flex-row  px-[10px] pt-[100px]">
+      <div className="px-[12px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
+        <div className="flex flex-col md:flex-row  px-[30px] sm:px-[10px] pt-[100px]">
           <div>
-            <div className="text-text-secondary text-[14px] ">WHO ARE WE</div>
-            <h1 className="text-[32px] leading-[2.5rem] mb-[12px] font-semibold">
+            <div className="text-text-secondary text-[14px] font-semibold">
+              WHO ARE WE
+            </div>
+            <h1 className="text-[24px] md:text-[32px] leading-[2rem] md:leading-[2.5rem] mb-[12px] font-semibold">
               We are technology-oriented <br /> solution provider & consultants
             </h1>
             <p className="text-text-primary text-[14px] leading-[1.5rem]">
