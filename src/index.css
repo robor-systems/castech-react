@@ -7,3 +7,14 @@
     font-family: "Open Sans", sans-serif;
   }
 }
+.slick-dots li button:before {
+  font-size: 12px !important;
+  opacity: 1 !important;
+  color: #a0a8bb !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #606f7b !important;
+}
+.slick-dots {
+  bottom: -50px !important;
+}

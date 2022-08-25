@@ -18,7 +18,7 @@ const amplitude =
 const Companies = () => {
   const isSm = useMediaQuery({ query: "(max-width: 620px)" });
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -28,6 +28,7 @@ const Companies = () => {
     speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    appendDots: (dots) => <div>{dots}</div>,
   };
   return (
     <div className="flex flex-col text-center mt-[150px]">
