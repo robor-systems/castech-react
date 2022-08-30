@@ -8,7 +8,7 @@ const Hero = () => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col sm:flex-row">
-      <div className="text-center sm:text-left mt-[130px]  mx-[15px] lg:mt-[85px] xl:mt-[200px] 2xl:mr-[198px] xl:mr-[150px] lg:mr-[100px] md:mx-[30px] lg:ml-[85px] xl:ml-[188px] ">
+      <div className="text-center sm:text-left mt-[130px]  mx-[15px] lg:mt-[85px] xl:mt-[204px] 2xl:mr-[198px] xl:mr-[150px] lg:mr-[100px] md:mx-[30px] lg:ml-[85px] xl:ml-[188px] ">
         <div className="flex flex-col items-center">
           <div className="w-[20rem] md:w-[34rem]">
             <h1 className="text-[32px]  sm:text-[54px] font-bold leading-[2.5rem] sm:leading-[4.5rem] ">

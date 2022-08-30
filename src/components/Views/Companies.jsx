@@ -16,7 +16,7 @@ const amplitude =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/amplitude-seeklogo.com.png";
 
 const Companies = () => {
-  const isSm = useMediaQuery({ query: "(max-width: 620px)" });
+  const isSm = useMediaQuery({ query: "(max-width: 768px)" });
   var settings = {
     dots: true,
     infinite: true,
