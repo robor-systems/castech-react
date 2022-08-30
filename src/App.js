@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Views/Home";
 import Contact from "./components/Views/Contact";
@@ -20,6 +21,7 @@ const App = () => {
       <Footer />
     </div>
   );
+
 };
 
 export default App;
