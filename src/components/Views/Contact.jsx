@@ -22,7 +22,9 @@ const Contact = () => {
           {" "}
           HOW CAN WE HELP?
         </p>
-        <h1 className="text-[32px] font-semibold">Book Free Consultation</h1>
+        <h1 className="text-[24px] md:text-[32px] font-semibold">
+          Book Free Consultation
+        </h1>
         <p className="text-[14px] text-text-primary pb-[48px] ">
           Whether you have questions about features, demos or trials, we are
           here
@@ -59,7 +61,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="mt-[32px] bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[10px] rounded w-[183px] text-[18px]"
+                  className="mt-[32px] bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[183px] text-[18px]"
                 >
                   Send Message
                 </button>

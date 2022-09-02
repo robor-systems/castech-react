@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutStats = () => {
   return (
-    <div className="w-[312px] h-[260px] md:w-[580px] lg:w-[800px]  xl:w-[1126px] lg:h-[120px] rounded-[8px] bg-[#EE2737] mt-[100px] flex flex-row justify-around md:px-[50px] xl:px-[100px]">
+    <div className="w-[312px] h-[260px] md:w-[580px] lg:w-[800px]  xl:w-[1126px] lg:h-[120px] rounded-[8px] bg-[#EE2737] mt-[100px] flex flex-row justify-around md:px-[50px] xl:px-[100px] ">
       <div className="flex flex-col lg:flex-row lg:w-[500px] justify-around">
         <div className="py-[24px] ">
           <p className="text-[39px] text-[#FFFFFF]">100+</p>

@@ -44,7 +44,7 @@ export const TextArea = ({ label, ...props }) => {
         </label>
         <textarea
           autoComplete="off"
-          className={`pl-[20px] border-2 border-solid boder-[#EEF2F6] h-[136px] rounded-[6px] ${
+          className={`pt-[20px] pl-[20px] border-2 border-solid boder-[#EEF2F6] h-[136px] rounded-[6px] ${
             meta.touched && meta.error && "border-[#EE2737] bg-[#F8E9E9]"
           }`}
           {...field}

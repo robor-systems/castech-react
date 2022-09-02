@@ -56,7 +56,7 @@ const Career = () => {
           </div>
         </div>
       ) : (
-        <div className="pt-[100px] flex flex-col md:flex-row gap-[1rem] md:gap-[5rem] justify-between mx-[10px] md:mx-0  px-[22px] md:px-[100px] lg:px-[100px] xl:px-[200px]">
+        <div className="pt-[100px] flex flex-col md:flex-row md:justify-around gap-[1rem] md:gap-[5rem] justify-between mx-[10px] md:mx-0  px-[22px] md:px-[100px] lg:px-[100px] xl:px-[200px] 3xl:px-[600px]">
           <div className="relative ">
             <img
               src={photo}

@@ -7,8 +7,8 @@ const dot_Square =
 const AboutUs = () => {
   return (
     <section name="about">
-      <div className="px-[12px] md:px-[100px] lg:px-[100px] xl:px-[200px] ">
-        <div className="flex flex-col md:flex-row  px-[30px] sm:px-[10px] pt-[100px]">
+      <div className="px-[12px] md:px-[100px] lg:px-[100px] xl:px-[200px] 3xl:px-[600px]">
+        <div className="flex flex-col md:flex-row md:justify-around px-[30px] sm:px-[10px] pt-[100px]">
           <div>
             <div className="text-text-secondary text-[14px] font-semibold">
               WHO ARE WE

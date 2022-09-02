@@ -2,8 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-
     extend: {
+      screens: {
+        "3xl": "1600px",
+      },
       colors: {
         primary: {
           DEFAULT: "var(--color-primary)",
@@ -21,7 +23,6 @@ module.exports = {
         body: ["Open Sans", "sans-serif"],
       },
     },
-
   },
   plugins: [],
 };
