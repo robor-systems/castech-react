@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section name="service">
       <div className="flex flex-col items-center">
-        <h2 className="text-text-secondary text-[14px] text-center pt-[100px] font-semibold">
+        <h2 className="text-text-secondary text-[14px] text-center pt-[100px]  mb-[10px] font-semibold">
           WHAT WE DO
         </h2>
         <h1 className="text-center text-[24px] sm-[32px] font-semibold px-[30px]">

@@ -12,7 +12,7 @@ const Career = () => {
       {isSm ? (
         <div className="pt-[50px] flex flex-col  gap-[1rem]  justify-between mx-[10px]  px-[22px] ">
           <div>
-            <div className="text-text-secondary text-[14px]  mt-[50px] md:mt-[0px] ">
+            <div className="text-text-secondary text-[14px] font-semibold  mt-[50px] md:mt-[0px] ">
               WHY JOIN US
             </div>
             <div>
@@ -63,7 +63,7 @@ const Career = () => {
               alt="groupimage"
               className="w-[312px] md:w-[496px] h-[239px] md:h-[380px]   rounded-[35px] md:rounded-[80px] relative z-10 "
             />
-            <div className="absolute left-[-3%] md:left-[-15%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
+            <div className="absolute left-[-3%] md:left-[-12%] bottom-[-11%] md:bottom-[28%] xl:bottom-[-8%] ">
               <img
                 src={dot_Square}
                 alt="dots"
@@ -72,7 +72,7 @@ const Career = () => {
             </div>
           </div>
           <div>
-            <div className="text-text-secondary text-[14px]  mt-[50px] md:mt-[0px] ">
+            <div className="text-text-secondary text-[14px] font-semibold mb-[10px]  mt-[50px] md:mt-[0px] ">
               WHY JOIN US
             </div>
             <div>
@@ -80,25 +80,25 @@ const Career = () => {
                 We value or people and their cultures lorem ipsum.
               </h1>
             </div>
-            <p className="text-text-primary text-[14px] leading-[1.5rem]">
-              We in CASTechnology Inc. believe those employees are asset of
-              organization. We <br /> care them and do whatever is possible to
-              train and retain them. We maintain a <br /> policy of
-              non-discrimination towards all employees and applicants for
-              employment. <br />
-              All aspects of employment with CASTechnology Inc. are governed by
-              merit, <br /> competence, suitability and qualifications, and will
-              not be influenced in any manner
-              <br /> by gender, age, race, color, religion, national origin or
-              disability
-            </p>
-            <p className="text-text-primary text-[14px] leading-[2rem]">
-              Want to be a part of our team? Send your resumé for future opening
-              at
-            </p>
-            <p className="text-text-secondary text-[14px] hover:underline cursor-pointer font-semibold">
-              admin_hr@CASTechnology.ca
-            </p>
+            <div className="w-[18rem] md:w-[36rem]">
+              <p className="text-text-primary text-[14px] leading-[1.5rem]">
+                We in CASTechnology Inc. believe those employees are asset of
+                organization. We care them and do whatever is possible to train
+                and retain them. We maintain a policy of non-discrimination
+                towards all employees and applicants for employment. All aspects
+                of employment with CASTechnology Inc. are governed by merit,
+                competence, suitability and qualifications, and will not be
+                influenced in any manner by gender, age, race, color, religion,
+                national origin or disability.
+              </p>
+              <p className="text-text-primary text-[14px] leading-[2rem]">
+                Want to be a part of our team? Send your resumé for future
+                opening at
+              </p>
+              <p className="text-text-secondary text-[14px] hover:underline cursor-pointer font-semibold">
+                admin_hr@CASTechnology.ca
+              </p>
+            </div>
           </div>
         </div>
       )}

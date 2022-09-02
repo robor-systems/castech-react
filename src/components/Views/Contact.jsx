@@ -54,10 +54,30 @@ const Contact = () => {
           {(formik) => (
             <div>
               <Form>
-                <TextField name="name" label={"Name"} text="text" />
-                <TextField name="email" label={"Email"} text="email" />
-                <TextField name="subject" label={"Subject"} text="text" />
-                <TextArea name="message" label={"Message"} text="text" />
+                <TextField
+                  name="name"
+                  label={"Name"}
+                  text="text"
+                  placeholder="John Doe"
+                />
+                <TextField
+                  name="email"
+                  label={"Email"}
+                  text="email"
+                  placeholder="john.doe@gmail.com"
+                />
+                <TextField
+                  name="subject"
+                  label={"Subject"}
+                  text="text"
+                  placeholder="How can we help you?"
+                />
+                <TextArea
+                  name="message"
+                  label={"Message"}
+                  text="text"
+                  placeholder="Hey! I need help with...."
+                />
 
                 <button
                   type="submit"

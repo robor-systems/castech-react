@@ -8,9 +8,9 @@ const Hero = () => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col sm:flex-row justify-around 3xl:px-[500px]">
-      <div className="text-center sm:text-left mt-[130px]  mx-[15px] lg:mt-[85px] xl:mt-[204px] 2xl:mr-[198px] xl:mr-[150px] lg:mr-[100px] md:mx-[30px] lg:ml-[85px] xl:ml-[188px] ">
+      <div className="text-center sm:text-left mt-[130px]  mx-[15px] lg:mt-[85px] xl:mt-[204px]  lg:ml-[85px] xl:ml-[188px] ">
         <div className="flex flex-col items-center">
-          <div className="w-[20rem] md:w-[34rem]">
+          <div className="w-[20rem] lg:w-[25rem] xl:w-[34rem]">
             <h1 className="text-[32px]  sm:text-[54px] font-bold leading-[2.5rem] sm:leading-[4.5rem] ">
               Lorem Ipsum Dolor <br /> Sit Amet
             </h1>
@@ -33,9 +33,9 @@ const Hero = () => {
         <img
           alt="hero_image"
           src={Hero_image}
-          className=" h-[282px] lg:w-[38.5rem]  lg:h-[483px] sm:rounded-bl-[80px] lg:mt-[35px]"
+          className=" h-[282px] lg:w-[616px]  lg:h-[483px] sm:rounded-bl-[80px] lg:mt-[35px]"
         />
-        <div className="absolute right-0 w-[110px] sm:w-[194px]  bottom-[-16%] md:bottom-[2%]">
+        <div className="absolute right-0 w-[110px] sm:w-[194px]  bottom-[-16%] md:bottom-[-2%]">
           <img src={dot_Square} alt="dots" />
         </div>
       </div>
