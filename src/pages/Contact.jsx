@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
-import { TextField, TextArea } from "../TextField";
+import { TextField, TextArea } from "@/modules";
 import * as Yup from "yup";
 const successIcon =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/icons/success-icon.svg";
@@ -16,16 +16,16 @@ const Contact = () => {
 
   const [success, setSuccess] = useState();
   return (
-    <div className="pt-[170px]  bg-[#EEF2F6] flex flex-col px-[20px] md:items-center ">
-      <div className="text-center px-[15px]">
-        <p className="text-[14px] text-text-secondary font-semibold">
+    <div className='pt-[170px]  bg-[#EEF2F6] flex flex-col px-[20px] md:items-center '>
+      <div className='text-center px-[15px]'>
+        <p className='text-[14px] text-text-secondary font-semibold'>
           {" "}
           HOW CAN WE HELP?
         </p>
-        <h1 className="text-[24px] md:text-[32px] font-semibold">
+        <h1 className='text-[24px] md:text-[32px] font-semibold'>
           Book Free Consultation
         </h1>
-        <p className="text-[14px] text-text-primary pb-[48px] ">
+        <p className='text-[14px] text-text-primary pb-[48px] '>
           Whether you have questions about features, demos or trials, we are
           here
           <br />
@@ -33,7 +33,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="px-[25px] md:px-[40px]  pb-[30px]  md:w-[547px]  bg-[#FFFFFF] rounded-[8px] border-[#EEF2F6] mb-[99px]">
+      <div className='px-[25px] md:px-[40px]  pb-[30px]  md:w-[547px]  bg-[#FFFFFF] rounded-[8px] border-[#EEF2F6] mb-[99px]'>
         <Formik
           initialValues={{
             name: "",
@@ -55,41 +55,41 @@ const Contact = () => {
             <div>
               <Form>
                 <TextField
-                  name="name"
+                  name='name'
                   label={"Name"}
-                  text="text"
-                  placeholder="John Doe"
+                  text='text'
+                  placeholder='John Doe'
                 />
                 <TextField
-                  name="email"
+                  name='email'
                   label={"Email"}
-                  text="email"
-                  placeholder="john.doe@gmail.com"
+                  text='email'
+                  placeholder='john.doe@gmail.com'
                 />
                 <TextField
-                  name="subject"
+                  name='subject'
                   label={"Subject"}
-                  text="text"
-                  placeholder="How can we help you?"
+                  text='text'
+                  placeholder='How can we help you?'
                 />
                 <TextArea
-                  name="message"
+                  name='message'
                   label={"Message"}
-                  text="text"
-                  placeholder="Hey! I need help with...."
+                  text='text'
+                  placeholder='Hey! I need help with....'
                 />
 
                 <button
-                  type="submit"
-                  className="mt-[32px] bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[183px] text-[18px]"
+                  type='submit'
+                  className='mt-[32px] bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[183px] text-[18px]'
                 >
                   Send Message
                 </button>
-                <div className="flex mt-[16px] ">
+                <div className='flex mt-[16px] '>
                   {success && (
                     <>
-                      <img src={successIcon} alt="success-icon" />
-                      <p className="ml-[8px] ">
+                      <img src={successIcon} alt='success-icon' />
+                      <p className='ml-[8px] '>
                         Message Sent! Thank you, we will get back to you.
                       </p>
                     </>
