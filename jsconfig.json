@@ -1,11 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@/modules": ["components/Modules"],
-      "@/modules/*": ["components/Modules/*"],
-      "@/views": ["components/Views"],
-      "@/views/*": ["components/Views/*"]
-    }
-  }
+    "baseUrl": "src"
+  },
+  "include": ["src"]
 }
