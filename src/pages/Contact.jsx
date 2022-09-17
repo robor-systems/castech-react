@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
-import { TextField, TextArea } from "@/modules";
+import { TextArea, TextField } from "components/Modules";
 import * as Yup from "yup";
 const successIcon =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/icons/success-icon.svg";
