@@ -4,20 +4,20 @@ import {
   Companies,
   Services,
   AboutUs,
-  BookConsultation,
   Career,
-} from "@/views";
+  BookConsultation,
+} from "components/Views";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
       <Companies />
       <Services />
       <AboutUs />
       <Career />
       <BookConsultation />
-    </div>
+    </>
   );
 };
 
