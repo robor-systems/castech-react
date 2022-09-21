@@ -1,21 +1,26 @@
+import { Container } from "components/Modules";
+import Anchor from "components/Modules/Anchor/Anchor";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
 const BookConsultation = () => {
-  const navigate = useNavigate();
   return (
-    <div className="w-full h-[300px] md:h-[241px] bg-[#EEF2F6] mt-[140px] flex flex-col items-center px-[30px] md:px-[40px]">
-      <p className="text-[20px] mt-[56px] text-center font-medium text-text-dark">
-        Quisque eget erat ornare, tempor dui eu, maximus leo.
-        <br /> Donec sagittis urna sodales tincidunt.
-      </p>
-      <div className="mt-[26px] md:mb-[60px]">
-        <button
-          onClick={() => navigate("/contact")}
-          className="bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[269px] text-[20px] "
-        >
-          Book Free Consultation
-        </button>
-      </div>
+    <div className='w-full bg-[#EEF2F6] text-center py-12  '>
+      <Container>
+        <p className='text-[20px] font-medium text-text-dark'>
+          Quisque eget erat ornare, tempor dui eu, maximus leo.
+          <br /> Donec sagittis urna sodales tincidunt.
+        </p>
+        <div className='mt-[26px]'>
+          <Anchor
+            href='/contact'
+            title='Book Free Consultation'
+            filled
+            classNames={
+              "w-full sm:w-[269px]  sm:text-[20px] text-[16px]  py-[14px]"
+            }
+          />
+        </div>
+      </Container>
     </div>
   );
 };
