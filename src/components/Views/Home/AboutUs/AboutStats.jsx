@@ -21,7 +21,7 @@ const AboutStats = () => {
   ];
   return (
     <div className='py-10   rounded-[8px] bg-[#EE2737] mt-[100px] '>
-      <div className='grid grid-cols-2 md:grid-cols-4 justify-center items-center max-w-4xl mx-auto'>
+      <div className='grid grid-cols-2 md:grid-cols-4 sm:text-start text-center justify-center items-center max-w-4xl mx-auto'>
         {stats.map(({ stat, title }, i) => (
           <div className=' justify-self-center' key={i}>
             <p className='text-[39px] text-[#FFFFFF]'>{stat}</p>

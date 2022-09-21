@@ -5,7 +5,7 @@ import AboutStats from "./AboutStats";
 
 const AboutUs = () => {
   return (
-    <section name='about' id='about-us' className='my-20'>
+    <section name='about' id='about-us' className='my-20 sm:my-0 sm:py-20'>
       <Container>
         <div className='max-w-6xl mx-auto'>
           <div className='flex flex-col md:flex-row  gap-x-20 gap-y-14'>
