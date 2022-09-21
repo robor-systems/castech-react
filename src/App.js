@@ -3,10 +3,10 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
-import { Layout } from "@/modules";
+import { Layout } from "components/Modules";
 const App = () => {
   return (
-    <div className='flex flex-col min-h-[100vh]'>
+    <>
       <ScrollToTop />
       <Layout>
         <Routes>
@@ -15,7 +15,7 @@ const App = () => {
           <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
         </Routes>
       </Layout>
-    </div>
+    </>
   );
 };
 
