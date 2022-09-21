@@ -4,7 +4,7 @@ import React from "react";
 
 const Career = () => {
   return (
-    <section id='career' className='my-20'>
+    <section id='career' className='my-20 sm:my-0 sm:py-20 pb-12 sm:pb-32'>
       <Container>
         <div className='flex gap-x-20 max-w-6xl items-stretch mx-auto md:flex-row flex-col-reverse gap-y-14'>
           <div className='h-full w-full flex-[1] relative '>
