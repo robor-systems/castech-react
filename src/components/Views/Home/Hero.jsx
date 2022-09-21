@@ -1,4 +1,5 @@
 import { Container } from "components/Modules";
+import Anchor from "components/Modules/Anchor/Anchor";
 import { DOT_DECOR, HERO_IMAGE } from "constants/content.constant";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -18,12 +19,14 @@ const Hero = () => {
             </p>
           </div>
           <div className='mt-[26px] '>
-            <Link
-              to='/contact'
-              className='bg-[#EE2737] inline-block text-center hover:bg-[#DF1D2D] text-white  py-[14px] rounded w-[240px] sm:w-[269px] text-[16px] sm:text-[20px]'
-            >
-              Book Free Consultation
-            </Link>
+            <Anchor
+              href='/contact'
+              title='Book Free Consultation'
+              filled
+              classNames={
+                "w-[240px] sm:w-[269px] text-[16px] sm:text-[20px]  py-[14px]"
+              }
+            />
           </div>
         </div>
         <div className='h-fit relative'>
