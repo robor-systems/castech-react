@@ -5,7 +5,11 @@ import AboutStats from "./AboutStats";
 
 const AboutUs = () => {
   return (
-    <section name='about' id='about-us' className='my-20 sm:my-0 sm:py-20'>
+    <section
+      name='about'
+      id='about-us'
+      className='my-20 sm:my-0 sm:py-20 scroll-mt-24 sm:scroll-mt-10'
+    >
       <Container>
         <div className='max-w-6xl mx-auto'>
           <div className='flex flex-col md:flex-row  gap-x-20 gap-y-14'>
@@ -45,7 +49,7 @@ const AboutUs = () => {
               <img
                 src={ABOUT_US_IMAGE}
                 alt='groupimage'
-                className='rounded-[40px] md:rounded-[80px] md:min-h-[350px]'
+                className='rounded-[40px] md:rounded-[80px] md:min-h-[350px] object-cover'
               />
               <div className='absolute right-[-55px] bottom-[-55px] -z-10'>
                 <img src={DOT_DECOR} alt='dots' />

@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import Anchor from "components/Modules/Anchor/Anchor";
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { FiX, FiMenu } from "react-icons/fi";
 import { useLocation } from "react-router-dom";

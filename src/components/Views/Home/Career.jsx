@@ -4,19 +4,22 @@ import React from "react";
 
 const Career = () => {
   return (
-    <section id='career' className='my-20 sm:my-0 sm:py-20 pb-12 sm:pb-32'>
-      <Container>
+    <section
+      id='career'
+      className='my-20 sm:my-0 sm:py-20 pb-12 sm:pb-32 scroll-mt-24 sm:scroll-mt-10'
+    >
+      <Container className={"overflow-visible"}>
         <div className='flex gap-x-20 max-w-6xl items-stretch mx-auto md:flex-row flex-col-reverse gap-y-14'>
           <div className='h-full w-full flex-[1] relative '>
             <img
               src={CAREER_IMAGE}
               alt='Career'
-              className='rounded-[40px] md:rounded-[80px] md:min-h-[350px]'
+              className='rounded-[40px] md:rounded-[80px] md:min-h-[350px] object-cover'
             />
             <img
               src={DOT_DECOR}
               alt='decor'
-              className='absolute -bottom-14 -z-10'
+              className='absolute  bottom-[-55px] left-[-55px] -z-10'
             />
           </div>
           <div className='flex-[1] lg:pr-16 '>

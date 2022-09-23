@@ -17,7 +17,7 @@ const Contact = () => {
   const [success, setSuccess] = useState();
   return (
     <div className='bg-[#EEF2F6] flex flex-col  md:items-center py-20'>
-      <Container>
+      <Container className='px-[20px]'>
         <div className='text-center  pb-[48px] '>
           <p className='text-[14px] text-text-secondary font-semibold'>
             {" "}
@@ -34,7 +34,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className='px-[25px] md:px-[40px]  pb-[30px]  md:w-[547px]  bg-[#FFFFFF] rounded-[8px] border-[#EEF2F6] '>
+        <div className='px-[20px] md:px-[40px]  pb-[30px]  md:w-[547px]  bg-[#FFFFFF] rounded-[8px] border-[#EEF2F6] '>
           <Formik
             initialValues={{
               name: "",

@@ -25,7 +25,7 @@ const Companies = () => {
         <p className='text-text-primary font-semibold mb-10'>
           Trusted by top-tier companies
         </p>
-        {/* Slider for <768px screen */}
+        {/* Slider for < 768px screen */}
         <div className='md:hidden block'>
           <Slider {...settings}>
             {COMPANIES.map(({ alt, logo }, i) => (

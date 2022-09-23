@@ -5,7 +5,11 @@ import TechBox from "./TechBox";
 
 const Services = () => {
   return (
-    <section name='service' id='services' className='my-20 sm:my-0 sm:py-20'>
+    <section
+      name='service'
+      id='services'
+      className='my-20 sm:my-0 sm:py-20 scroll-mt-24 sm:scroll-mt-10'
+    >
       <Container>
         <div className='flex flex-col items-center max-w-6xl mx-auto'>
           <h2 className='text-text-secondary text-[14px] text-center font-semibold'>
