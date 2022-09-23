@@ -2,8 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import ScrollToTop from "./components/ScrollToTop";
-import { Layout } from "components/Modules";
+import { Layout, ScrollToTop } from "components/Modules";
 const App = () => {
   return (
     <>
