@@ -3,7 +3,7 @@ import Anchor from "components/Modules/Anchor/Anchor";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { FiX, FiMenu } from "react-icons/fi";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Snackbar = ({ links }) => {
   const [open, setOpen] = useState(false);
@@ -26,14 +26,17 @@ const Snackbar = ({ links }) => {
           open ? "block" : "hidden"
         )}
       >
-        {links.map(({ title, href }) => (
-          <div className='text-text-primary  py-5 border-b-[#EEF2F6] border-b-[2px] font-semibold'>
-            <a
-              href={href}
+        {links.map(({ title, href }, i) => (
+          <div
+            className='text-text-primary  py-5 border-b-[#EEF2F6] border-b-[2px] font-semibold'
+            key={i}
+          >
+            <Link
+              to={href}
               className='transition-all duration-300s hover:text-text-dark'
             >
               {title}
-            </a>
+            </Link>
           </div>
         ))}
         <div className='py-5 w-full '>
