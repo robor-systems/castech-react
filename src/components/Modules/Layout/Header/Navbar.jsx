@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className='w-[130px]'>
               <a
                 href={link.href}
-                className='px-6 text-text-primary cursor-pointer transition-all duration-300s hover:text-text-dark w-[130px]'
+                className='px-6 text-text-primary inline-block group w-fit cursor-pointer transition-all duration-300s hover:text-text-dark w-[130px]'
                 key={i}
               >
                 {link.title}
