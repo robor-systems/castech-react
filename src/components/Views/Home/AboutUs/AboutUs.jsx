@@ -11,7 +11,7 @@ const AboutUs = () => {
       className='my-20 sm:my-0 sm:py-20 scroll-mt-24 sm:scroll-mt-10'
     >
       <Container>
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-[1360px] mx-auto'>
           <div className='flex flex-col md:flex-row  gap-x-20 gap-y-14'>
             <div className='flex-[1] '>
               <div className='text-text-secondary text-[14px] font-semibold '>
