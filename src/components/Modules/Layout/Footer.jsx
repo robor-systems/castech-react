@@ -37,7 +37,7 @@ const Footer = () => {
   return (
     <div className='w-full  py-10  bg-[#1D1D1D] text-text-tertiary '>
       <Container>
-        <div className='flex flex-col md:flex-row justify-between  text-center md:text-left  max-w-6xl mx-auto'>
+        <div className='flex flex-col md:flex-row justify-between  text-center md:text-left max-w-[1360px] mx-auto'>
           <div>
             <h1 className='text-[20px] font-bold mb-[10px] text-[#DDEAF5]'>
               CASTechnology Inc
@@ -103,8 +103,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className='bg-#606F7B my-[47px]  mx-[40px]' />
-        <div className='flex flex-col md:flex-row justify-between gap-y-4 max-w-6xl mx-auto text-center md:text-left'>
+        <hr className='bg-#606F7B my-[47px] ' />
+        <div className='flex flex-col md:flex-row justify-between gap-y-4 max-w-[1360px]  mx-auto text-center md:text-left'>
           <Link
             to='/privacy-policy'
             className='hover:underline  order-last md:order-none'
