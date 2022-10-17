@@ -21,7 +21,7 @@ const Companies = () => {
   };
   return (
     <Container className='my-28 sm:my-0 sm:py-20'>
-      <div className='flex flex-col text-center max-w-6xl mx-auto'>
+      <div className='flex flex-col text-center max-w-[1360px] mx-auto'>
         <p className='text-text-primary font-semibold mb-10'>
           Trusted by top-tier companies
         </p>

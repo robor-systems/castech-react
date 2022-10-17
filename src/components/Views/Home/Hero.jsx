@@ -6,9 +6,12 @@ import React from "react";
 const Hero = () => {
   return (
     <Container className='sm:px-0  px-0 overflow-visible'>
-      <div className=' md:flex flex-col sm:flex-row justify-between min-h-[500px]'>
-        <div className='text-center md:text-left flex flex-col justify-center px-10 sm:px-20 md:py-0 py-16'>
-          <div className='max-w-2xl '>
+      <div
+        id=''
+        className='md:flex flex-col sm:flex-row justify-between min-h-[500px]'
+      >
+        <div className='text-center md:text-left flex flex-col justify-center px-10 sm:px-[88px] md:py-0 py-16'>
+          <div className='max-w-2xl'>
             <h1 className='text-[32px]  sm:text-[54px] font-bold leading-[2.5rem] sm:leading-[4.5rem] '>
               Lorem Ipsum Dolor <br /> Sit Amet
             </h1>

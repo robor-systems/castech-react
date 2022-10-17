@@ -15,6 +15,8 @@ const Home = () => {
     if (hash) {
       const ele = document.getElementById(hash.split("#")[1]);
       ele.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scrollTo(0, 0);
     }
   }, [hash]);
   return (
