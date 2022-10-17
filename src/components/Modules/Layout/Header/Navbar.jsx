@@ -33,15 +33,15 @@ const Navbar = () => {
         {/* NAV ITEMS */}
         <div className='justify-between items-center   lg:flex hidden'>
           {links.map((link, i) => (
-            <div className='w-[130px]'>
-              <a
-                href={link.href}
+            <div className='w-[130px]' key={i}>
+              <Link
+                to={link.href}
                 className='px-6 text-text-primary inline-block group w-fit cursor-pointer transition-all duration-300s hover:text-text-dark '
                 key={i}
               >
                 {link.title}
                 <div className='w-0 h-[2px] transition-all duration-300 group-hover:w-full bg-text-dark'></div>
-              </a>
+              </Link>
             </div>
           ))}
           <div className='md:w-[130px] w-full'>
