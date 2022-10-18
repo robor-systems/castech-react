@@ -14,8 +14,8 @@ const Career = () => {
           <div className='h-full w-full flex-[1] relative '>
             <img
               height={350}
-              src='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/career.jpg?alt=media&token=f0952f09-b4a3-45d8-8b3d-800b0f81f615'
-              srcSet='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/career-small.jpg?alt=media&token=f6860dd2-a81b-4d9d-8c13-0385acbfcf48 650w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/career-medium.jpg?alt=media&token=c6fa6a40-65c7-4d7c-ae4e-045b2fe18086 768w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/career-large.jpg?alt=media&token=3c17c7dc-381c-4858-a04c-85ae19db4e0c 1440w'
+              src='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/career.jpg'
+              srcSet='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/career-small.jpg 650w, https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/career-large.jpg 1440w'
               alt='Career'
               className='rounded-[40px] md:rounded-[80px] w-[100%] md:min-h-[350px] object-cover'
             />

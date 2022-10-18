@@ -35,9 +35,9 @@ const Hero = () => {
           <img
             height={400}
             alt='hero_image'
-            src='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/hero.jpg?alt=media&token=93668273-cec7-4888-9991-de6a7a8baaf4'
+            src='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/hero.jpg'
             className='md:rounded-bl-[80px] w-full md:w-[600px] md:h-[400px] object-cover'
-            srcSet='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/hero-small.jpg?alt=media&token=8a46ad5b-c8ea-4f92-8d3e-19a3533e907a 650w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/hero-medium.jpg?alt=media&token=a858c944-84b1-4179-b727-04fb7d94cf7a 768w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/hero-large.jpg?alt=media&token=3076fd9a-d577-4988-a4bc-ee85b7872f25 1440w'
+            srcSet='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/hero-small.jpg 650w, https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/hero-large.jpg 1440w'
           />
           <div className='absolute right-0  bottom-[-65px]'>
             <img src={DOT_DECOR} alt='dots' height={92} width={194} />

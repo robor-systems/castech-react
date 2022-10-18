@@ -48,8 +48,8 @@ const AboutUs = () => {
             <div className='relative h-fit flex-[1] w-full'>
               <img
                 height={350}
-                src='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team.jpg?alt=media&token=352fe997-5f89-4847-8307-6d6662db9d8d'
-                srcSet='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team-small.jpg?alt=media&token=1ddf9704-48ee-4cfe-8825-d891ce12ca8a 650w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team-medium.jpg?alt=media&token=b697f904-9c3f-438e-a49f-5c41fc480a11 768w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team-large.jpg?alt=media&token=470c2a97-a55b-4f10-a713-858d6ef5d8ff 1440w'
+                src='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/team.jpg'
+                srcSet='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/team-small.jpg 650w, https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/team-large.jpg 1440w'
                 alt='groupimage'
                 className='rounded-[40px] w-[100%] md:rounded-[80px] md:min-h-[350px] object-cover'
               />
