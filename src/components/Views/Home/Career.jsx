@@ -1,6 +1,7 @@
 import { Container } from "components/Modules";
-import { CAREER_IMAGE, DOT_DECOR } from "constants/content.constant";
+import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Career = () => {
   return (
@@ -12,12 +13,16 @@ const Career = () => {
         <div className='flex gap-x-20 max-w-[1360px] items-stretch mx-auto md:flex-row flex-col-reverse gap-y-14'>
           <div className='h-full w-full flex-[1] relative '>
             <img
-              src={CAREER_IMAGE}
+              height={350}
+              src='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/career.jpg'
+              srcSet='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/career-small.jpg 650w, https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/career-large.jpg 1440w'
               alt='Career'
-              className='rounded-[40px] md:rounded-[80px] md:min-h-[350px] object-cover'
+              className='rounded-[40px] md:rounded-[80px] w-[100%] md:min-h-[350px] object-cover'
             />
             <img
               src={DOT_DECOR}
+              height={92}
+              width={194}
               alt='decor'
               className='absolute  bottom-[-55px] left-[-55px] -z-10'
             />
@@ -40,9 +45,20 @@ const Career = () => {
               national origin or disability. <br />
               Want to be a part of our team? Send your resumé for future opening
               at{" "}
-              <span className='text-text-secondary text-[14px] hover:underline cursor-pointer  font-semibold'>
+              {/* <span className='text-text-secondary text-[14px] hover:underline cursor-pointer  font-semibold'> */}
+              <Link
+                to='#'
+                className='text-text-secondary text-[14px] hover:underline cursor-pointer  font-semibold'
+                onClick={(e) => {
+                  window.location.href = "mailto:info@castechnology.ca";
+                  e.preventDefault();
+                }}
+                target='_blank'
+              >
+                {" "}
                 admin_hr@CASTechnology.ca
-              </span>
+              </Link>
+              {/* </span> */}
             </div>
           </div>
         </div>

@@ -29,18 +29,27 @@ const Companies = () => {
         <div className='md:hidden block'>
           <Slider {...settings}>
             {COMPANIES.map(({ alt, logo }, i) => (
-              <div className='!flex justify-center mt-[32px]  '>
-                <img src={logo} alt={alt} />
+              <div
+                className='!flex justify-center mt-[32px] items-center'
+                key={i}
+              >
+                <img src={logo} alt={alt} height={41} width={160} />
               </div>
             ))}
           </Slider>
         </div>
 
         {/* Static view for laptop screens */}
-        <div className='md:grid grid-cols-3 gap-y-8 justify-center   lg:grid-cols-5 hidden  '>
+        <div className='md:grid grid-cols-3 gap-y-8 justify-center  items-center  lg:grid-cols-5 hidden  '>
           {COMPANIES.map(({ alt, logo }, i) => (
-            <div className='justify-self-center'>
-              <img src={logo} alt={alt} />
+            <div className='justify-self-center w-full' key={i}>
+              <img
+                src={logo}
+                alt={alt}
+                height={41}
+                width={160}
+                className='mx-auto object-contain'
+              />
             </div>
           ))}
         </div>

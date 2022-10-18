@@ -1,6 +1,6 @@
 import { Container } from "components/Modules";
 import Anchor from "components/Modules/Anchor/Anchor";
-import { DOT_DECOR, HERO_IMAGE } from "constants/content.constant";
+import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
 
 const Hero = () => {
@@ -33,12 +33,14 @@ const Hero = () => {
         </div>
         <div className='h-fit relative'>
           <img
+            height={400}
             alt='hero_image'
-            src={HERO_IMAGE}
+            src='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/hero.jpg'
             className='md:rounded-bl-[80px] w-full md:w-[600px] md:h-[400px] object-cover'
+            srcSet='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/hero-small.jpg 650w, https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/hero-large.jpg 1440w'
           />
           <div className='absolute right-0  bottom-[-65px]'>
-            <img src={DOT_DECOR} alt='dots' />
+            <img src={DOT_DECOR} alt='dots' height={92} width={194} />
           </div>
         </div>
       </div>

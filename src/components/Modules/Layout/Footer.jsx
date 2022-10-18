@@ -5,7 +5,6 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaPhoneAlt,
 } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { Container } from "..";
@@ -48,13 +47,13 @@ const Footer = () => {
               Software Development Projects, Telecom Solutions Integrator (CRM &
               Billing) and Data Warehousing.
             </p>
-            <div className='hidden md:flex mt-[30px] gap-x-4'>
+            {/* <div className='hidden md:flex mt-[30px] gap-x-4'>
               {socialLinks.map(({ href, Icon }, i) => (
-                <a target='_blank' href={href} rel='noreferrer'>
+                <a target='_blank' key={i} href={href} rel='noreferrer'>
                   <Icon className='text-xl ' />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className='flex flex-col gap-y-6 md:mt-0  my-10'>
             <a
@@ -88,15 +87,15 @@ const Footer = () => {
                 info@castechnology.ca
               </p>
             </Link>
-            <div className='flex flex-col gap-x-2 gap-y-2 md:flex-row  items-center '>
+            {/* <div className='flex flex-col gap-x-2 gap-y-2 md:flex-row  items-center '>
               {" "}
               <FaPhoneAlt className='mb-[10px] md:mb-[0px]  ' />
               <p className='text-[14px]'>+13065914999</p>
-            </div>
+            </div> */}
           </div>
           <div className='flex justify-center md:hidden mt-[30px]  gap-x-4'>
             {socialLinks.map(({ href, Icon }, i) => (
-              <a target='_blank' href={href} rel='noreferrer'>
+              <a target='_blank' key={i} href={href} rel='noreferrer'>
                 <Icon className='text-xl ' />
               </a>
             ))}

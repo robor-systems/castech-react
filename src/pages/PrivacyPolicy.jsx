@@ -69,14 +69,23 @@ const PrivacyPolicy = () => {
             cookies.
           </li>
           <li className='mt-[20px]'>
-            <p className='text-text-dark font-bold'>Flash cookies</p> Certain
-            features of our service may use locally stored objects (or flash
-            cookies) to collect and store information about your preferences or
-            your activity on our service. Flash cookies are not managed by the
-            same browser settings as those used for browser cookies. For more
-            information on how you can delete flash cookies, please read "Where
-            shared objects?" available at
-            https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change
+            <h6 className='text-text-dark font-bold'>Flash cookies</h6>
+            <p className=' mr-[4px] inline'>
+              Certain features of our service may use locally stored objects (or
+              flash cookies) to collect and store information about your
+              preferences or your activity on our service. Flash cookies are not
+              managed by the same browser settings as those used for browser
+              cookies. For more information on how you can delete flash cookies,
+              please read "Where shared objects?" available at
+            </p>
+            <a
+              rel='noreferrer'
+              target='_blank'
+              href='https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change'
+              className='group inline text-text-secondary ml-[2px] hover:underline transition-all duration-300'
+            >
+              https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change
+            </a>
           </li>
           <li className='mt-[20px]'>
             <p className='text-text-dark font-bold'>Web beacons </p> Certain
@@ -93,7 +102,15 @@ const PrivacyPolicy = () => {
           Cookies can be "Persistent" or "Session" cookies. Persistent cookies
           remain on your personal computer or mobile device when you go offline,
           while session cookies are deleted as soon as you close your web
-          browser. Learn more about cookies: What are cookies?.
+          browser. Learn more about cookies:
+          <a
+            rel='noreferrer'
+            target='_blank'
+            href='https://policies.google.com/technologies/cookies?hl=en-US'
+            className='group inline-block ml-[2px] text-text-secondary hover:underline transition-all duration-300'
+          >
+            What are cookies?.
+          </a>
         </p>
         <h1 className='text-text-dark font-bold text-[20px] mt-[20px]'>
           Lorem Ipsum
@@ -144,14 +161,24 @@ const PrivacyPolicy = () => {
             technologies we use may include:
           </li>
           <li className='mt-[20px]'>
-            <p className='text-text-dark font-bold'>Flash cookies</p> Certain
-            features of our service may use locally stored objects (or flash
-            cookies) to collect and store information about your preferences or
-            your activity on our service. Flash cookies are not managed by the
-            same browser settings as those used for browser cookies. For more
-            information on how you can delete flash cookies, please read "Where
-            can I change the settings for disabling, or deleting local shared
-            objects?" available at
+            <h6 className='text-text-dark font-bold mr-[4px]'>Flash cookies</h6>{" "}
+            <p className='mr-[4px] inline'>
+              Certain features of our service may use locally stored objects (or
+              flash cookies) to collect and store information about your
+              preferences or your activity on our service. Flash cookies are not
+              managed by the same browser settings as those used for browser
+              cookies. For more information on how you can delete flash cookies,
+              please read "Where can I change the settings for disabling, or
+              deleting local shared objects?" available at
+            </p>
+            <a
+              rel='noreferrer'
+              target='_blank'
+              href='https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change'
+              className='group inline  text-text-secondary hover:underline transition-all duration-300'
+            >
+              https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change
+            </a>
           </li>
           <li className='mt-[20px]'>
             <p className='text-text-dark font-bold'>Web beacons </p> Certain
@@ -164,11 +191,20 @@ const PrivacyPolicy = () => {
             integrity).
           </li>
         </ul>
-        <p>
+        <p className='mt-6'>
           Cookies can be "Persistent" or "Session" cookies. Persistent cookies
           remain on your personal computer or mobile device when you go offline,
           while session cookies are deleted as soon as you close your web
-          browser. Learn more about cookies: What are cookies?.
+          browser. Learn more about cookies:{" "}
+          <a
+            rel='noreferrer'
+            target='_blank'
+            href='https://policies.google.com/technologies/cookies?hl=en-US'
+            className='group inline-block text-text-secondary hover:underline transition-all duration-300'
+          >
+            What are cookies?
+          </a>
+          .
         </p>
       </Container>
     </div>

@@ -1,5 +1,5 @@
 import { Container } from "components/Modules";
-import { ABOUT_US_IMAGE, DOT_DECOR } from "constants/content.constant";
+import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
 import AboutStats from "./AboutStats";
 
@@ -47,12 +47,14 @@ const AboutUs = () => {
             </div>
             <div className='relative h-fit flex-[1] w-full'>
               <img
-                src={ABOUT_US_IMAGE}
+                height={350}
+                src='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/team.jpg'
+                srcSet='https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/team-small.jpg 650w, https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/home/team-large.jpg 1440w'
                 alt='groupimage'
-                className='rounded-[40px] md:rounded-[80px] md:min-h-[350px] object-cover'
+                className='rounded-[40px] w-[100%] md:rounded-[80px] md:min-h-[350px] object-cover'
               />
               <div className='absolute right-[-55px] bottom-[-55px] -z-10'>
-                <img src={DOT_DECOR} alt='dots' />
+                <img src={DOT_DECOR} alt='dots' height={92} width={194} />
               </div>
             </div>
           </div>

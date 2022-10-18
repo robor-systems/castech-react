@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* LOGO */}
         <div>
           <Link to='/'>
-            <img src={LOGO} alt='logo' />
+            <img src={LOGO} alt='logo' height={27} width={187} />
           </Link>
         </div>
         {/* NAV ITEMS */}
