@@ -1,6 +1,6 @@
 import { Container } from "components/Modules";
 import Anchor from "components/Modules/Anchor/Anchor";
-import { DOT_DECOR, HERO_IMAGE } from "constants/content.constant";
+import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
 
 const Hero = () => {

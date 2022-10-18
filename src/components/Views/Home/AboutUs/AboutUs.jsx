@@ -1,5 +1,5 @@
 import { Container } from "components/Modules";
-import { ABOUT_US_IMAGE, DOT_DECOR } from "constants/content.constant";
+import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
 import AboutStats from "./AboutStats";
 

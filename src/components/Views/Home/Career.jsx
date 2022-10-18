@@ -1,5 +1,5 @@
 import { Container } from "components/Modules";
-import { CAREER_IMAGE, DOT_DECOR } from "constants/content.constant";
+import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
 import { Link } from "react-router-dom";
 
