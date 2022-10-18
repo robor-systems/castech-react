@@ -47,12 +47,14 @@ const AboutUs = () => {
             </div>
             <div className='relative h-fit flex-[1] w-full'>
               <img
-                src={ABOUT_US_IMAGE}
+                height={350}
+                src='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team.jpg?alt=media&token=352fe997-5f89-4847-8307-6d6662db9d8d'
+                srcSet='https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team-small.jpg?alt=media&token=1ddf9704-48ee-4cfe-8825-d891ce12ca8a 650w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team-medium.jpg?alt=media&token=b697f904-9c3f-438e-a49f-5c41fc480a11 768w, https://firebasestorage.googleapis.com/v0/b/ass-2-c90ee.appspot.com/o/team-large.jpg?alt=media&token=470c2a97-a55b-4f10-a713-858d6ef5d8ff 1440w'
                 alt='groupimage'
-                className='rounded-[40px] md:rounded-[80px] md:min-h-[350px] object-cover'
+                className='rounded-[40px] w-[100%] md:rounded-[80px] md:min-h-[350px] object-cover'
               />
               <div className='absolute right-[-55px] bottom-[-55px] -z-10'>
-                <img src={DOT_DECOR} alt='dots' />
+                <img src={DOT_DECOR} alt='dots' height={92} width={194} />
               </div>
             </div>
           </div>
