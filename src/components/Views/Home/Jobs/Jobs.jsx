@@ -37,12 +37,14 @@ const Jobs = () => {
         >
             {jobs.length > 0 ? (<>
                     <CareersHeader jobs={jobs}/>
-                    <div className='flex flex-col items-center max-w-[1360px] mx-auto'>
+
 
                         <Container>
-                            {jobs.map((job) => <Job key={job.slug.current} job={job}/>)}
+                            <div className={"container mx-auto"}>
+                                {jobs.map((job) => <Job key={job.slug.current} job={job}/>)}
+                            </div>
                         </Container>
-                    </div>
+
                 </>
             ) : <CareersHeader jobs={jobs}/>}
         </section>
