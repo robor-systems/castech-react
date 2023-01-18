@@ -1,0 +1,52 @@
+import {Container} from "components/Modules";
+import React, {useEffect} from "react";
+import sanityClient from "../../../../sanityClient";
+import {Job} from "./Job";
+import {CareersHeader} from "./CareersHeader";
+
+
+const Jobs = () => {
+    const [jobs, setJobs] = React.useState([])
+
+
+    useEffect(() => {
+        sanityClient
+            .fetch(`*[_type == "job"]{
+        title,
+        slug,
+        description,
+        categories,
+        publishedAt
+     
+      }
+    `
+            )
+            .then((data) => {
+                setJobs(data)
+                //set jobs in JobsContext
+
+
+            })
+            .catch(console.error);
+    }, []);
+    return (
+        <section
+            name='career'
+            id='career'
+            className='my-20 sm:my-0 sm:py-20 scroll-mt-24 sm:scroll-mt-10'
+        >
+            {jobs.length > 0 ? (<>
+                    <CareersHeader jobs={jobs}/>
+                    <div className='flex flex-col items-center max-w-[1360px] mx-auto'>
+
+                        <Container>
+                            {jobs.map((job) => <Job key={job.slug.current} job={job}/>)}
+                        </Container>
+                    </div>
+                </>
+            ) : <CareersHeader jobs={jobs}/>}
+        </section>
+    );
+};
+
+export default Jobs;

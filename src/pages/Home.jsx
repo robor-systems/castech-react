@@ -8,6 +8,7 @@ import {
   BookConsultation,
 } from "components/Views";
 import { useLocation } from "react-router-dom";
+import Jobs from "../components/Views/Home/Jobs/Jobs";
 
 const Home = () => {
   const { hash } = useLocation();
@@ -24,8 +25,10 @@ const Home = () => {
       <Hero />
       <Companies />
       <Services />
+
       <AboutUs />
       <Career />
+        <Jobs/>
       <BookConsultation />
     </>
   );
