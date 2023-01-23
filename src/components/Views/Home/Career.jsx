@@ -2,6 +2,7 @@ import { Container } from "components/Modules";
 import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
 import { Link } from "react-router-dom";
+import Jobs from "./Jobs/Jobs";
 
 const Career = () => {
   return (
@@ -63,6 +64,7 @@ const Career = () => {
           </div>
         </div>
       </Container>
+        <Jobs />
     </section>
   );
 };

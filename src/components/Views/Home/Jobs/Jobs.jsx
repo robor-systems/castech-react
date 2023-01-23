@@ -30,9 +30,7 @@ const Jobs = () => {
             .catch(console.error);
     }, []);
     return (
-        <section
-            name='career'
-            id='career'
+        <div
             className='my-20 sm:my-0 sm:py-20 scroll-mt-24 sm:scroll-mt-10'
         >
             {jobs.length > 0 ? (<>
@@ -47,7 +45,7 @@ const Jobs = () => {
 
                 </>
             ) : <CareersHeader jobs={jobs}/>}
-        </section>
+        </div>
     );
 };
 

@@ -8,9 +8,7 @@ import {DetailsComponent} from "./DetailsComponent";
 export default function JobDetails() {
     const [job, setJob] = useState(null);
     const [error, setError] = useState(null);
-    //get the job id from the url
     const {slug} = useParams();
-    //get the job from the jobs array
     useEffect(() => {
         sanityClient
             .fetch(`*[_type == "job" && slug.current == $slug]{
