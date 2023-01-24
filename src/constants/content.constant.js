@@ -56,36 +56,36 @@ export const COMPANIES = [
 
 export const SERVICES = [
   {
-    heading: "Cloud Computing",
+    heading: "Enterprise Management",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
+      "We can assist in strategic enterprise management, management & financial account and business analytics.",
   },
   {
-    heading: "Cyber Security",
+    heading: "Design, Build and Operate Infrastructure",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
+      "We can help with demand & requirements planning, operations & maintenance and network design & develoment.",
+  },
+  {
+    heading: "Software Business Application Development",
+    details:
+      "We can improve your business by providing customized or off-the-shelf software solutions.",
+  },
+  {
+    heading: "Business Automation",
+    details:
+      "We can provide feasability study for business automation and figure out areas in your business that can be optimized by automation.",
   },
   {
     heading: "Data Warehousing",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
+      "We can provide development and implementation of data warehousing using standard products.",
   },
   {
-    heading: "Quality Assurance",
+    heading: "Database Related Services",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
+      "We can provide design and development of database servers, performance tuning of existing databases and consultation for RDBMS like Oracle, MSSQL and MYSQL databases.",
   },
-  {
-    heading: "Blockchain",
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
-  },
-  {
-    heading: "Advisory",
-    details:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
-  },
-  {
+  /*   {
     heading: "Data Storage",
     details:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
@@ -94,5 +94,5 @@ export const SERVICES = [
     heading: "IT Offshoring",
     details:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna.",
-  },
+  }, */
 ];
