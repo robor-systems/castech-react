@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import {
   Hero,
-  Companies,
   Services,
   AboutUs,
   Career,
@@ -22,7 +21,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Companies />
       <Services />
       <AboutUs />
       <Career />

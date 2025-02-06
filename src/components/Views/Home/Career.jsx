@@ -32,14 +32,14 @@ const Career = () => {
               WHY JOIN US
             </div>
             <div className='text-[24px] md:text-[32px] leading-[2rem] md:leading-[2.5rem] font-semibold my-3'>
-              We value or people and their cultures lorem ipsum.
+              We value or people and their cultures.
             </div>
             <div className='text-text-primary text-[14px] leading-[1.5rem]'>
-              We in CASTechnology Inc. believe those employees are asset of
+              We in Waazes believe those employees are asset of
               organization. We care them and do whatever is possible to train
               and retain them. We maintain a policy of non-discrimination
               towards all employees and applicants for employment. All aspects
-              of employment with CASTechnology Inc. are governed by merit,
+              of employment with Waazes are governed by merit,
               competence, suitability and qualifications, and will not be
               influenced in any manner by gender, age, race, color, religion,
               national origin or disability. <br />
@@ -50,14 +50,14 @@ const Career = () => {
                 to='#'
                 className='text-text-secondary text-[14px] hover:underline cursor-pointer  font-semibold'
                 onClick={(e) => {
-                  window.location.href = "mailto:info@castechnology.ca";
+                  window.location.href = "mailto:support@waazes.ca";
                   e.preventDefault();
                 }}
                 target='_blank'
               >
                 {" "}
-                admin_hr@CASTechnology.ca
-              </Link>
+                support@waazes.ca
+                </Link>
               {/* </span> */}
             </div>
           </div>

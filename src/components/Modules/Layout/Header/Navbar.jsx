@@ -25,11 +25,6 @@ const Navbar = () => {
     <div className='z-20 bg-[#fff]  top-0 sticky shadow-[0px_3px_10px_#00000014]  w-full py-5'>
       <Container className={"flex justify-between items-center "}>
         {/* LOGO */}
-        <div>
-          <Link to='/'>
-            <img src={LOGO} alt='logo' height={27} width={187} />
-          </Link>
-        </div>
         {/* NAV ITEMS */}
         <div className='justify-between items-center   lg:flex hidden'>
           {links.map((link, i) => (

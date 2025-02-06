@@ -1,6 +1,3 @@
-export const LOGO =
-  "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/logo/CASTechnology+Inc.png";
-
 export const HERO_IMAGE =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/hero-image.jpg";
 
@@ -84,6 +81,11 @@ export const SERVICES = [
     heading: "Database Related Services",
     details:
       "We can provide design and development of database servers, performance tuning of existing databases and consultation for RDBMS like Oracle, MSSQL and MYSQL databases.",
+  },
+  {
+    heading: "Cybersecurity",
+    details:
+      "We can provide comprehensive cybersecurity solutions, including network security, threat monitoring, data protection, and incident response to safeguard your business from cyber threats.",
   },
   /*   {
     heading: "Data Storage",
