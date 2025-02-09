@@ -85,7 +85,7 @@ export const SERVICES = [
   {
     heading: "Cybersecurity",
     details:
-      "We can provide comprehensive cybersecurity solutions, including network security, threat monitoring, data protection, and incident response to safeguard your business from cyber threats.",
+      "Protect your business with our expert cybersecurity services—advanced threat detection, risk management, and 24/7 protection to safeguard your data from cyber threats.",
   },
   /*   {
     heading: "Data Storage",
