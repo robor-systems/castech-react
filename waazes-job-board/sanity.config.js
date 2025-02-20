@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Waazes-job-board',
 
-  projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
-  dataset: process.env.REACT_APP_SANITY_DATASET,
+  projectId: "ma48d4bd", 
+  dataset: "production",
 
   plugins: [structureTool(), visionTool()],
 

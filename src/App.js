@@ -5,6 +5,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import { Layout, ScrollToTop } from "components/Modules";
 import Careers from './pages/Careers';
 import JobDetails from './pages/JobDetails';
+import Apply from './pages/Apply';
+
 const App = () => {
   return (
     <>
@@ -16,6 +18,7 @@ const App = () => {
           <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
           <Route path="/careers" element={<Careers />} />
         <Route path="/careers/:slug" element={<JobDetails />} />
+        <Route path="/careers/:slug/apply" element={<Apply />} />
         </Routes>
       </Layout>
     </>

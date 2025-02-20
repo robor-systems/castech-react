@@ -6,9 +6,12 @@ const Careers = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    client.fetch('*[_type == "job"]').then((data) => setJobs(data));
+    client
+      .fetch('*[_type == "job" && visible == true]') // Only fetch visible jobs
+      .then((data) => setJobs(data))
+      .catch(console.error);
   }, []);
-
+  
   return (
     <div className="container w-[70%] mt-10 mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">Open Positions</h1>
