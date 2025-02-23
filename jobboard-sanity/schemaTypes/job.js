@@ -18,10 +18,16 @@ export default {
       },
     },
     {
+      name: 'summary',
+      title: 'Summary',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'array',
-      of: [{ type: 'block' }], 
+      of: [{ type: 'block' }],
     },
     {
       name: 'visible',

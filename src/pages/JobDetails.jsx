@@ -13,6 +13,19 @@ const JobDetails = () => {
 
   if (!job) return <p className="text-center">Loading...</p>;
 
+  const components = {
+    listItem: {
+      // Ex. 1: customizing common list types
+      bullet: ({children}) => <li style={{listStyleType: 'circle'}}>{children}</li>,
+    },
+    block: {
+      normal: ({ children }) => <p className="">{children}</p>, // Adds space between paragraphs
+      h1: ({children}) => <h1 className="text-2xl">{children}</h1>,
+      h2: ({children}) => <h2 className="text-xl font-bold">{children}</h2>,
+      h3: ({children}) => <h3 className="text-lg font-semibold">{children}</h3>,
+    },
+  }
+
   return (
     <div className="container w-[70%] mt-10 mx-auto p-6 leading-loose">
       {/* Back to Open Positions & Apply Now Button */}
@@ -30,11 +43,7 @@ const JobDetails = () => {
       <div className="mt-6 text-gray-700 leading-7">
         <PortableText
           value={job.description}
-          components={{
-            block: {
-              normal: ({ children }) => <p className="mb-4">{children}</p>, // Adds space between paragraphs
-            },
-          }}
+          components={components}
         />
       </div>
     </div>
