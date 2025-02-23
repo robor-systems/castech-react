@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { Container } from "..";
 
 const socialLinks = [

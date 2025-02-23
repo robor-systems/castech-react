@@ -1,3 +1,6 @@
+export const LOGO =
+  "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/logo/waazes-no-bg.png";
+
 export const HERO_IMAGE =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/hero-image.jpg";
 
