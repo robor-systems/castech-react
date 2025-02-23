@@ -1,13 +1,13 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { visionTool } from '@sanity/vision'
+import { schemaTypes } from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Waazes-job-board',
+  title: 'waazes-job-board',
 
-  projectId: "ma48d4bd", 
+  projectId: process.env.SANITY_STUDIO_SANITY_PROJECT_ID,
   dataset: "production",
 
   plugins: [structureTool(), visionTool()],
