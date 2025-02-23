@@ -2,6 +2,11 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { createClient } from '@supabase/supabase-js'
+import { v4 as uuidv4 } from 'uuid';
+
+// Create a single supabase client for interacting with your database
+const supabase = createClient(process.env.REACT_APP_SUPABASE_URL, process.env.REACT_APP_SUPABASE_PUBLIC_KEY)
 
 const Apply = () => {
   const { slug } = useParams();
@@ -17,7 +22,7 @@ const Apply = () => {
     resume: null,
   });
 
-  const requirePermitExpiry = !["Work Permit", "Study Permit"].includes(formData.immigrationStatus);
+  const requirePermitExpiry = ["Work Permit", "Study Permit"].includes(formData.immigrationStatus);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,20 +33,56 @@ const Apply = () => {
     setFormData({ ...formData, phone });
   };
 
-  const handleFileChange = (e) => {
-    setFormData({ ...formData, resume: e.target.files[0] });
+  const handleFileChange = async (e) => {
+    if (!e.target.files[0]) return;
+    const { data, error } = await supabase.storage.from('resumes').upload('resumes/' + uuidv4()+"_"+e.target.files[0].name, e.target.files[0])
+    if (error) {
+      console.error('Error uploading file: ', error)
+      alert('Error uploading file')
+    } else {
+      setFormData({ ...formData, resume: data.fullPath });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Application submitted successfully!");
+    const { error } = await supabase
+    .from('job-applications')
+    .insert({ name: formData.name, 
+      email: formData.email, 
+      phone_number: formData.phone, 
+      address: formData.address, 
+      relocatable: formData.relocation, 
+      preferred_start_date: new Date(formData.startDate).toISOString(), 
+      immigration_status:formData.immigrationStatus, 
+      permit_expiry: formData.workPermitExpiry || null, 
+      resume: formData.resume })
+
+    if (error) {
+      console.error('error while inserting record', error)
+    }else{
+      alert("Application submitted successfully")
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        relocation: "",
+        startDate: "",
+        immigrationStatus: "",
+        workPermitExpiry: "",
+        resume: null,
+      });
+      document.getElementById("application-form").reset();
+    }
+    
+    
   };
 
   return (
     <div className="container w-[40%] mt-10 mx-auto p-6 leading-loose">
       <h1 className="text-2xl font-bold mb-4">Apply for {slug.replace(/-/g, " ")}</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form id="application-form" onSubmit={handleSubmit} className="space-y-4">
         <label className="block">Name</label>
         <input
           type="text"
@@ -128,7 +169,7 @@ const Apply = () => {
           placeholder="Work Permit Expiry (if applicable)"
           onChange={handleChange}
           required
-          className={"w-full p-2 border rounded-md" + (requirePermitExpiry ? "" : " bg-gray-200")}
+          className={"w-full p-2 border rounded-md" + (!requirePermitExpiry ? "bg-gray-400" : "")}
           disabled={!requirePermitExpiry}
         />
 
