@@ -16,8 +16,8 @@ const Navbar = () => {
       href: "/#about-us",
     },
     {
-      title: "Career",
-      href: "/#career",
+      title: "Careers",
+      href: "/careers",
     },
   ];
 
