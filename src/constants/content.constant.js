@@ -56,6 +56,11 @@ export const COMPANIES = [
 
 export const SERVICES = [
   {
+    heading: "Cybersecurity",
+    details:
+      "Protect your business with our expert cybersecurity services like advanced threat detection, risk management, and 24/7 protection.",
+  },
+  {
     heading: "Enterprise Management",
     details:
       "We can assist in strategic enterprise management, management & financial account and business analytics.",
@@ -83,12 +88,7 @@ export const SERVICES = [
   {
     heading: "Database Related Services",
     details:
-      "We can provide design and development of database servers, performance tuning of existing databases and consultation for RDBMS like Oracle, MSSQL and MYSQL databases.",
-  },
-  {
-    heading: "Cybersecurity",
-    details:
-      "Protect your business with our expert cybersecurity services—advanced threat detection, risk management, and 24/7 protection to safeguard your data from cyber threats.",
+      "We can provide design and development of database servers and performance tuning of existing databases like Oracle, MSSQL and MYSQL databases.",
   },
   /*   {
     heading: "Data Storage",
