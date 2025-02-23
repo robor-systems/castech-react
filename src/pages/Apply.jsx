@@ -17,6 +17,8 @@ const Apply = () => {
     resume: null,
   });
 
+  const requirePermitExpiry = !["Work Permit", "Study Permit"].includes(formData.immigrationStatus);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -103,22 +105,31 @@ const Apply = () => {
         />
 
         <label className="block">Immigration Status</label>
-        <input
+        <select
           type="text"
           name="immigrationStatus"
           placeholder="Immigration Status"
           required
           onChange={handleChange}
           className="w-full p-2 border rounded-md"
-        />
+        >
+          <option value="">Select</option>
+          <option value="Citizen">Citizen</option>
+          <option value="Permanent Resident">Permanent Resident</option>
+          <option value="Work Permit">Work Permit</option>
+          <option value="Study Permit">Study Permit</option>
+          <option value="Visitor">Visitor</option>
+        </select>
 
-        <label className="block">Work Permit Expiry</label>
+        <label className="block">Permit Expiry</label>
         <input
           type="date"
           name="workPermitExpiry"
           placeholder="Work Permit Expiry (if applicable)"
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          required
+          className={"w-full p-2 border rounded-md" + (requirePermitExpiry ? "" : " bg-gray-200")}
+          disabled={!requirePermitExpiry}
         />
 
         <label className="block">Upload Resume</label>
