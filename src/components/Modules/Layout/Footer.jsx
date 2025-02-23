@@ -33,6 +33,8 @@ const socialLinks = [
 ];
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className='w-full  py-10  bg-[#1D1D1D] text-text-tertiary '>
       <Container>
@@ -89,7 +91,7 @@ const Footer = () => {
 
         <hr className='bg-#606F7B my-[47px] ' />
         <div className='flex flex-col md:flex-row justify-between gap-y-4 max-w-[1360px]  mx-auto text-center md:text-left'>
-          <div>Copyright © Waazes 2025</div>
+          <div>Copyright © Waazes {currentYear}</div>
         </div>
       </Container>
     </div>
