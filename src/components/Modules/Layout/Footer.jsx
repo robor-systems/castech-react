@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { Container } from "..";
 
 const socialLinks = [
@@ -33,16 +33,18 @@ const socialLinks = [
 ];
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className='w-full  py-10  bg-[#1D1D1D] text-text-tertiary '>
       <Container>
         <div className='flex flex-col md:flex-row justify-between  text-center md:text-left max-w-[1360px] mx-auto'>
           <div>
             <h1 className='text-[20px] font-bold mb-[10px] text-[#DDEAF5]'>
-              CASTechnology Inc
+              Waazes
             </h1>
             <p className='text-[14px] md:w-[340px] lg:w-[431px]'>
-              CASTechnology Inc . is an IT Consulting and solution provider
+              Waazes is an IT Consulting and solution provider
               company. It is based in Regina, Canada and has specialized in
               Software Development Projects, Telecom Solutions Integrator (CRM &
               Billing) and Data Warehousing.
@@ -56,26 +58,11 @@ const Footer = () => {
             </div> */}
           </div>
           <div className='flex flex-col gap-y-6 md:mt-0  my-10'>
-            <a
-              target='_blank'
-              rel='noreferrer'
-              href='https://goo.gl/maps/rTC46Vw6Bjybasof6'
-              className='flex flex-col gap-x-2 gap-y-2 md:flex-row items-center  md:items-start'
-            >
-              {" "}
-              <MdLocationOn className='md:mt-[5px]' />
-              <p className='text-[14px] hover:underline '>
-                3403 Middleton Place,
-                <br /> Regina, SK, S4N 7C2,
-                <br />
-                Canada
-              </p>
-            </a>
 
             <Link
               to='#'
               onClick={(e) => {
-                window.location.href = "mailto:info@castechnology.ca";
+                window.location.href = "mailto:support@waazes.ca";
                 e.preventDefault();
               }}
               target='_blank'
@@ -84,7 +71,7 @@ const Footer = () => {
               {" "}
               <MdEmail />
               <p className='text-[14px] hover:underline'>
-                info@castechnology.ca
+              support@waazes.ca
               </p>
             </Link>
             {/* <div className='flex flex-col gap-x-2 gap-y-2 md:flex-row  items-center '>
@@ -104,13 +91,7 @@ const Footer = () => {
 
         <hr className='bg-#606F7B my-[47px] ' />
         <div className='flex flex-col md:flex-row justify-between gap-y-4 max-w-[1360px]  mx-auto text-center md:text-left'>
-          <Link
-            to='/privacy-policy'
-            className='hover:underline  order-last md:order-none'
-          >
-            Privacy Policy
-          </Link>
-          <div>Copyright © CASTechnology Inc. 2022</div>
+          <div>Copyright © Waazes {currentYear}</div>
         </div>
       </Container>
     </div>
