@@ -1,5 +1,5 @@
 export const LOGO =
-  "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/logo/CASTechnology+Inc.png";
+  "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/logo/waazes-no-bg.png";
 
 export const HERO_IMAGE =
   "https://robor-team.s3.eu-central-1.amazonaws.com/cas-tech/hero-image.jpg";
@@ -56,6 +56,11 @@ export const COMPANIES = [
 
 export const SERVICES = [
   {
+    heading: "Cybersecurity",
+    details:
+      "Protect your business with our expert cybersecurity services like advanced threat detection, risk management, and 24/7 protection.",
+  },
+  {
     heading: "Enterprise Management",
     details:
       "We can assist in strategic enterprise management, management & financial account and business analytics.",
@@ -83,7 +88,7 @@ export const SERVICES = [
   {
     heading: "Database Related Services",
     details:
-      "We can provide design and development of database servers, performance tuning of existing databases and consultation for RDBMS like Oracle, MSSQL and MYSQL databases.",
+      "We can provide design and development of database servers and performance tuning of existing databases like Oracle, MSSQL and MYSQL databases.",
   },
   /*   {
     heading: "Data Storage",

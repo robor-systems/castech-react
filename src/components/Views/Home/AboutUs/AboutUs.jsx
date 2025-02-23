@@ -1,7 +1,6 @@
 import { Container } from "components/Modules";
 import { DOT_DECOR } from "constants/content.constant";
 import React from "react";
-import AboutStats from "./AboutStats";
 
 const AboutUs = () => {
   return (
@@ -25,7 +24,7 @@ const AboutUs = () => {
                   An IT Consulting and solution provider company. It is based in
                   Regina, Canada and has specialized in Software Development
                   Projects, Telecom Solutions Integrator (CRM & Billing) and
-                  Data Warehousing. CASTechnology is fully committed to provide
+                  Data Warehousing. Waazes is fully committed to provide
                   first class IT and consultancy services around the globe.
                 </p>
                 <p className="text-text-primary mt-[8px] text-[14px] leading-[1.5rem]">
@@ -58,8 +57,6 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-
-          <AboutStats />
         </div>
       </Container>
     </section>

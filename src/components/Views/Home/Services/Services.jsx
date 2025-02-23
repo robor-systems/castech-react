@@ -15,17 +15,21 @@ const Services = () => {
           <h2 className="text-text-secondary text-[14px] text-center font-semibold">
             WHAT WE DO
           </h2>
-          <h1 className="text-center text-[24px] sm-[32px] font-semibold px-[30px]">
+          <h1 className="text-center text-[24px] sm:text-[32px] font-semibold px-[30px]">
             We're an IT consulting and solution provider company.
           </h1>
           <p className="text-center text-[16px] text-text-primary my-3">
             We have more than 35 years of accumulated experience in delivering
             flexible IT solutions
           </p>
-          <div className="flex grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-14">
-            {SERVICES.map(({ heading, details }, i) => (
-              <TechBox key={i} heading={heading} para={details} />
-            ))}
+
+          {/* Scrollable Container */}
+          <div className="w-full max-w-[1400px] overflow-x-auto scrollbar-hide">
+            <div className="flex gap-8 pt-14 pb-10 min-w-[800px] sm:min-w-full">
+              {SERVICES.map(({ heading, details }, i) => (
+                <TechBox key={i} heading={heading} para={details} />
+              ))}
+            </div>
           </div>
         </div>
       </Container>
