@@ -1,10 +1,16 @@
-import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 const Apply = () => {
   const { slug } = useParams();
+  const [jobTitle, setJobTitle] = useState("");
+
+  useEffect(() => {
+    setJobTitle(slug.replace(/-/g, " ")); 
+  }, [slug]);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,14 +38,26 @@ const Apply = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
     alert("Application submitted successfully!");
   };
 
   return (
-    <div className="container w-[40%] mt-10 mx-auto p-6 leading-loose">
-      <h1 className="text-2xl font-bold mb-4">Apply for {slug.replace(/-/g, " ")}</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <div className="w-full">
+    <div className="bg-gray-300 w-full py-12">
+      <div className="max-w-4xl mx-auto px-16">
+        <h1 className="text-5xl font-bold">Apply For</h1>
+        <Link
+          to={`/careers/${slug}`}
+          className="text-red-500 text-2xl font-semibold hover:underline flex items-center mt-5"
+        >
+        💼 {jobTitle.charAt(0).toUpperCase() + jobTitle.slice(1)}
+        </Link>
+      </div>
+    </div>
+
+      {/* Application Form */}
+      <div className="container w-[90%] md:w-[45%] mt-4 mx-auto p-6 leading-loose">
+      <form onSubmit={handleSubmit} className="space-y-3">
         <label className="block">Name</label>
         <input
           type="text"
@@ -47,7 +65,7 @@ const Apply = () => {
           placeholder="Enter Full Name"
           required
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-400 rounded-md"
         />
 
         <label className="block">Email</label>
@@ -57,7 +75,7 @@ const Apply = () => {
           placeholder="Enter Email address"
           required
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-400 rounded-md"
         />
 
         <label className="block">Phone</label>
@@ -66,9 +84,9 @@ const Apply = () => {
           enableSearch={true} 
           value={formData.phone}
           onChange={handlePhoneChange}
-          inputClass="w-full p-2 border rounded-md"
-          containerClass="w-full"
-        />
+          inputClass="w-full p-2 border rounded-md border-gray-400"
+          containerClass="w-[250px] md:w-full"
+          />
 
         <label className="block">Address</label>
         <input
@@ -77,7 +95,7 @@ const Apply = () => {
           placeholder="Address"
           required
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-400 rounded-md"
         />
 
         <label className="block">Are you willing to relocate?</label>
@@ -85,7 +103,7 @@ const Apply = () => {
           name="relocation"
           required
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md border-gray-400"
         >
           <option value="">Select</option>
           <option value="Yes">Yes</option>
@@ -99,7 +117,7 @@ const Apply = () => {
           placeholder="Preferred Start Date"
           required
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-400 rounded-md"
         />
 
         <label className="block">Immigration Status</label>
@@ -109,7 +127,7 @@ const Apply = () => {
           placeholder="Immigration Status"
           required
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-400 rounded-md"
         />
 
         <label className="block">Work Permit Expiry</label>
@@ -118,7 +136,7 @@ const Apply = () => {
           name="workPermitExpiry"
           placeholder="Work Permit Expiry (if applicable)"
           onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-400 rounded-md"
         />
 
         <label className="block">Upload Resume</label>
@@ -127,7 +145,7 @@ const Apply = () => {
           accept=".pdf,.doc,.docx"
           required
           onChange={handleFileChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md border-gray-400"
         />
 
         <button
@@ -137,6 +155,7 @@ const Apply = () => {
           Submit Application
         </button>
       </form>
+    </div>
     </div>
   );
 };

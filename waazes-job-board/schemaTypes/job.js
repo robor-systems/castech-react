@@ -18,6 +18,14 @@ export default {
       },
     },
     {
+      name: "postedDate", 
+      title: "Date Posted",
+      type: "date",
+      options: {
+        dateFormat: "YYYY-MM-DD",
+      },
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'array',
