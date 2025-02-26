@@ -14,7 +14,41 @@ const Contact = () => {
     message: Yup.string().required("Required"),
   });
 
-  const [success, setSuccess] = useState();
+  const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (values, { resetForm }) => {
+    setLoading(true);
+    setSuccess("");
+
+    try {
+      const response = await fetch(
+        `${process.env.REACT_APP_SUPABASE_URL}/functions/v1/sendContactFormEmail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${process.env.REACT_APP_SUPABASE_PUBLIC_KEY}`,
+          },
+          body: JSON.stringify(values),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSuccess("Message Sent! Thank you, we will get back to you.");
+        resetForm();
+      } else {
+        setSuccess(`Error: ${data.error || "Failed to send message"}`);
+      }
+    } catch (error) {
+      setSuccess(`Error: ${error.message}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className='bg-[#EEF2F6] flex flex-col  md:items-center py-20'>
       <Container className='px-[20px]'>
@@ -43,14 +77,7 @@ const Contact = () => {
               message: "",
             }}
             validationSchema={validate}
-            onSubmit={(values) => {
-              console.log(values);
-              if (values) {
-                setSuccess(true);
-              } else {
-                setSuccess(false);
-              }
-            }}
+            onSubmit={handleSubmit}
           >
             {(formik) => (
               <div>
@@ -82,19 +109,21 @@ const Contact = () => {
 
                   <button
                     type='submit'
-                    className='mt-[32px] bg-[#EE2737] hover:bg-[#DF1D2D] text-white  py-[14px] rounded sm:w-[183px] text-[18px]  w-full'
+                    className='mt-[32px] bg-[#EE2737] hover:bg-[#DF1D2D] text-white py-[14px] rounded sm:w-[183px] text-[18px] w-full'
+                    disabled={loading}
                   >
-                    Send Message
+                    {loading ? "Sending..." : "Send Message"}
                   </button>
+
                   <div className='flex mt-[16px] items-center'>
                     {success && (
                       <>
                         <FiCheckCircle className='text-base w-6 flex-none' />
-                        <p className='ml-[8px]  sm:text-base text-sm'>
-                          Message Sent! Thank you, we will get back to you.
+                        <p className='ml-[8px] sm:text-base text-sm'>
+                          {success}
                         </p>
                       </>
-                    )}{" "}
+                    )}
                   </div>
                 </Form>
               </div>
