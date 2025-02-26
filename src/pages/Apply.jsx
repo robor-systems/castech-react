@@ -59,9 +59,34 @@ const Apply = () => {
       resume: formData.resume })
 
     if (error) {
-      console.error('error while inserting record', error)
-    }else{
-      alert("Application submitted successfully")
+      console.error('Error while inserting record', error);
+      return alert('Application submission failed.');
+    }
+  
+    // Call Supabase Edge Function to send email
+    const emailResponse = await fetch(
+      `${process.env.REACT_APP_SUPABASE_URL}/functions/v1/sendApplicationEmail`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json",
+         },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.name,
+          jobTitle: slug.replace(/-/g, " "),
+        }),
+      }
+    );
+    console.log(process.env.REACT_APP_SUPABASE_URL);
+  
+    if (!emailResponse.ok) {
+      console.error("Failed to send email", await emailResponse.json());
+      return alert("Application submitted, but email not sent.");
+    }
+  
+    alert("Application submitted successfully. Confirmation email sent!");
+  
+     // Reset form
       setFormData({
         name: "",
         email: "",
@@ -74,8 +99,6 @@ const Apply = () => {
         resume: null,
       });
       document.getElementById("application-form").reset();
-    }
-    
     
   };
 
