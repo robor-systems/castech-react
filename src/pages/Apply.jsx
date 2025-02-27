@@ -73,12 +73,18 @@ const Apply = () => {
         body: JSON.stringify({
           email: formData.email,
           name: formData.name,
+          phone: formData.phone,
+          address: formData.address,
+          relocation: formData.relocation,
+          startDate: formData.startDate,
+          immigrationStatus: formData.immigrationStatus,
+          workPermitExpiry: formData.workPermitExpiry,
+          resume: `${process.env.REACT_APP_SUPABASE_URL}/storage/v1/object/public/${formData.resume}`,  
           jobTitle: slug.replace(/-/g, " "),
         }),
       }
     );
-    console.log(process.env.REACT_APP_SUPABASE_URL);
-  
+      
     if (!emailResponse.ok) {
       console.error("Failed to send email", await emailResponse.json());
       return alert("Application submitted, but email not sent.");

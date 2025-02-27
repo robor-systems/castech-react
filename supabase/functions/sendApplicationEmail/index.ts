@@ -9,9 +9,9 @@ serve(async (req) => {
   }
 
   try {
-    const { email, name, jobTitle } = await req.json();
+    const { name, email, phone, address, relocation, startDate, immigrationStatus, workPermitExpiry, resume, jobTitle } = await req.json();
 
-    if (!email || !name || !jobTitle) {
+    if (!name || !email || !phone || !address || !relocation || !startDate || !immigrationStatus || !resume || !jobTitle) {
       return new Response(JSON.stringify({ error: "Missing required fields" }), {
         status: 400,
         headers: { "Access-Control-Allow-Origin": "*" },
@@ -28,12 +28,19 @@ serve(async (req) => {
       body: JSON.stringify({
         from: "onboarding@resend.dev", 
         to: "test.waazes@gmail.com",
-        subject: `Application Received for ${jobTitle}`,
-        html: `<p>Dear ${name},</p>
-               <p>Thank you for applying for the <strong>${jobTitle}</strong> position.</p>
-               <p>We will review your application and get back to you soon.</p>
-               <p>Best Regards,</p>
-               <p>The Waazes Team</p>`
+        subject: `New Job Application: ${jobTitle}`,
+        html: `
+         <p style="color: black;"><strong>Job Title:</strong> ${jobTitle}</p>
+         <p style="color: black;"><strong>Name:</strong> ${name}</p>
+         <p style="color: black;"><strong>Email:</strong> ${email}</p>
+         <p style="color: black;"><strong>Phone:</strong> ${phone}</p>
+         <p style="color: black;"><strong>Address:</strong> ${address}</p>
+         <p style="color: black;"><strong>Relocation:</strong> ${relocation}</p>
+         <p style="color: black;"><strong>Preferred Start Date:</strong> ${startDate}</p>
+         <p style="color: black;"><strong>Immigration Status:</strong> ${immigrationStatus}</p>
+         <p style="color: black;"><strong>Work Permit Expiry:</strong> ${workPermitExpiry || "N/A"}</p>
+         <p style="color: black;"><strong>Resume:</strong> <a href="${resume}" target="_blank">Download Resume</a></p>
+        `
       })
     });
 
