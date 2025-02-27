@@ -60,6 +60,13 @@ const Career = () => {
                 </Link>
               {/* </span> */}
             </div>
+            <Link 
+            to={`/careers`} 
+            className="bg-red-500 text-white mt-4 px-4 py-2 w-[114px] rounded-md font-semibold text-[20px] hover:bg-red-600 block"
+            >
+            Careers
+            </Link>
+
           </div>
         </div>
       </Container>
