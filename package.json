@@ -20,8 +20,8 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "uuid": "^11.1.0",
     "tailwind-scrollbar-hide": "^2.0.0",
+    "uuid": "^11.1.0",
     "web-vitals": "^2.1.0",
     "yup": "^0.32.11"
   },
@@ -52,6 +52,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7"
+    "tailwindcss": "^3.1.7",
+    "wrangler": "^3.114.0"
   }
 }
