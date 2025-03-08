@@ -11,8 +11,14 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+import updateRecord from "./supabase";
+
 export default {
-	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
+	async scheduled(
+		controller: ScheduledController,
+		env: Env,
+		ctx: ExecutionContext,
+	) {
+		await updateRecord();
 	},
 } satisfies ExportedHandler<Env>;
